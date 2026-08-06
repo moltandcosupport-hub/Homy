@@ -23,9 +23,10 @@ window.HOMY_CONFIG = {
   /* --- Email -------------------------------------------------------------- */
   email: "contact@homy.ma",
 
-  /* --- Office address ----------------------------------------------------- */
-  addressLine1: "45, Boulevard d'Anfa",
-  addressLine2: "Quartier Racine, 20050 Casablanca",
+  /* --- Office address -----------------------------------------------------
+     Add your exact street and number to addressLine1 when you have it.   */
+  addressLine1: "Triangle d'Or",
+  addressLine2: "20250 Casablanca",
   addressCountry: "Maroc",
 
   /* --- Opening hours ------------------------------------------------------ */
@@ -35,7 +36,7 @@ window.HOMY_CONFIG = {
   /* --- Map ----------------------------------------------------------------
      To change the map: open Google Maps, find your address, and replace the
      text after "q=" below with your address (spaces become +)            */
-  mapQuery: "Boulevard+d'Anfa,+Casablanca,+Maroc",
+  mapQuery: "Triangle+d'Or,+Casablanca,+Maroc",
 
   /* --- Social networks (leave "" empty to hide the icon) ------------------ */
   instagram: "https://instagram.com/",

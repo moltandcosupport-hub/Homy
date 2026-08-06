@@ -135,14 +135,19 @@ look at it there, which is simpler.
 
 ## 6. Before you go live
 
-- [ ] Real phone numbers and email in `js/config.js`
-- [ ] Real office address, and check the map on the contact page
-- [ ] Real WhatsApp number
+Already done: the WhatsApp number, the phone number, Rita Elliaoui's name, the
+2017 founding date and the Triangle d'Or office.
+
+Still to do:
+
+- [ ] The exact street and number of the office, in `js/config.js`
+      (`addressLine1`), then check the map on the contact page
+- [ ] A real email address in `js/config.js` — `contact@homy.ma` is a guess
 - [ ] Your own property photos and text in `listings.json`
-- [ ] The founder photo on the home page and About page (`index.html` and
+- [ ] A photo of Rita for the home page and the About page (`index.html` and
       `a-propos.html`, search for `founder__media`)
-- [ ] The credentials list on the About page — currently placeholder text, it
-      needs your actual legal information
+- [ ] **The three testimonials are invented.** Replace them with real client
+      quotes in `js/i18n.js`, or ask for the section to be removed.
 - [ ] The figures on the Investment page are market estimates for illustration;
       have them checked before publishing them as advice
 

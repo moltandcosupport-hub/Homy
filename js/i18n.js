@@ -115,27 +115,17 @@ window.HOMY_TEXT = {
     en: "A portion of our mandates is never published. Your information and your intentions remain strictly private."
   },
 
-  /* --------------------------------------------------------- HOME: STATS */
-  "stats.1.value": { fr: "2017",  en: "2017" },
-  "stats.1.label": { fr: "Année de création", en: "Founded" },
-  "stats.2.value": { fr: "450+",  en: "450+" },
-  "stats.2.label": { fr: "Transactions accompagnées", en: "Transactions handled" },
-  "stats.3.value": { fr: "2",     en: "2" },
-  "stats.3.label": { fr: "Villes, Casablanca et Marrakech", en: "Cities, Casablanca and Marrakech" },
-  "stats.4.value": { fr: "94 %",  en: "94%" },
-  "stats.4.label": { fr: "Clients recommandant HOMY", en: "Clients who recommend HOMY" },
-
   /* ------------------------------------------------------- HOME: FOUNDER */
   "founder.eyebrow": { fr: "La fondatrice", en: "The founder" },
-  "founder.name":    { fr: "Salma Bennani", en: "Salma Bennani" },
-  "founder.role":    { fr: "Fondatrice et directrice, HOMY Premium Real Estate", en: "Founder and Director, HOMY Premium Real Estate" },
+  "founder.name":    { fr: "Rita Elliaoui", en: "Rita Elliaoui" },
+  "founder.role":    { fr: "Fondatrice, HOMY Premium Real Estate", en: "Founder, HOMY Premium Real Estate" },
   "founder.quote": {
     fr: "« Une maison ne se vend pas avec une annonce. Elle se raconte, se fait visiter au bon moment, et se transmet à la bonne personne. »",
     en: "“A home is not sold with a listing. It is told, shown at the right moment, and passed on to the right person.”"
   },
   "founder.text": {
-    fr: "Née à Casablanca, Salma a passé huit ans dans le financement immobilier avant d'ouvrir HOMY en 2017 avec une conviction simple : le marché marocain haut de gamme méritait un accompagnement à la hauteur des biens qu'il propose.",
-    en: "Born in Casablanca, Salma spent eight years in real estate finance before opening HOMY in 2017 with a simple conviction: Morocco's premium market deserved a level of service equal to the homes it offers."
+    fr: "Rita Elliaoui a fondé HOMY en 2017 avec une conviction simple : le marché marocain haut de gamme méritait un accompagnement à la hauteur des biens qu'il propose. Depuis le bureau du Triangle d'Or, elle suit personnellement chaque dossier.",
+    en: "Rita Elliaoui founded HOMY in 2017 with a simple conviction: Morocco's premium market deserved a level of service equal to the homes it offers. From the Triangle d'Or office, she follows every file personally."
   },
   "founder.cta": { fr: "Découvrir notre histoire", en: "Read our story" },
 
@@ -232,32 +222,28 @@ window.HOMY_TEXT = {
   "about.story.eyebrow": { fr: "L'histoire", en: "The story" },
   "about.story.title":   { fr: "Une agence construite lentement", en: "An agency built slowly" },
   "about.story.p1": {
-    fr: "En 2017, Salma Bennani quitte le financement immobilier après huit ans passés à monter des dossiers d'acquisition pour des investisseurs institutionnels. Elle ouvre un premier bureau de deux personnes boulevard d'Anfa, avec quatre mandats et une règle : ne présenter que des biens qu'elle recommanderait à sa propre famille.",
-    en: "In 2017, Salma Bennani left real estate finance after eight years structuring acquisition files for institutional investors. She opened a first two-person office on boulevard d'Anfa with four mandates and one rule: only present properties she would recommend to her own family."
+    fr: "HOMY est fondée en 2017 par Rita Elliaoui, avec un bureau dans le Triangle d'Or à Casablanca et une règle qui n'a pas changé depuis : ne présenter que des biens que nous recommanderions à notre propre famille.",
+    en: "HOMY was founded in 2017 by Rita Elliaoui, with an office in the Triangle d'Or in Casablanca and one rule that has not changed since: only present properties we would recommend to our own family."
   },
   "about.story.p2": {
-    fr: "En 2019, HOMY ouvre son antenne de Marrakech pour accompagner une clientèle européenne de plus en plus présente sur les villas de la Palmeraie et les riads de la Médina. L'équipe passe à six personnes.",
-    en: "In 2019, HOMY opened its Marrakech office to serve a growing European clientele focused on Palmeraie villas and Medina riads. The team grew to six."
+    fr: "L'agence s'est ensuite étendue à Marrakech, pour accompagner une clientèle européenne de plus en plus présente sur les villas de la Palmeraie et les riads de la Médina — deux marchés qui ne se traitent pas comme celui de Casablanca.",
+    en: "The agency later extended to Marrakech, to serve a European clientele increasingly focused on Palmeraie villas and Medina riads — two markets that cannot be handled like Casablanca."
   },
   "about.story.p3": {
-    fr: "En 2022, l'agence structure son pôle conseil en investissement : analyse de rendement, montage locatif, accompagnement fiscal avec des partenaires notaires et experts-comptables. Aujourd'hui, HOMY compte onze collaborateurs, deux bureaux et plus de 450 transactions accompagnées.",
-    en: "In 2022, the agency formalised its investment advisory arm: yield analysis, rental structuring, tax guidance alongside partner notaries and chartered accountants. Today HOMY has eleven staff, two offices and more than 450 transactions handled."
+    fr: "Aujourd'hui, HOMY couvre la vente, la location et le conseil en investissement sur les deux villes, en français, en anglais et en arabe, avec le même interlocuteur du premier appel jusqu'à la signature chez le notaire.",
+    en: "Today HOMY covers sales, lettings and investment advice across both cities, in French, English and Arabic, with the same point of contact from the first call to signing at the notary."
   },
 
-  "about.timeline.eyebrow": { fr: "Les étapes", en: "Milestones" },
-  "about.timeline.title":   { fr: "Notre parcours", en: "Our journey" },
-  "about.timeline.1.year":  { fr: "2017", en: "2017" },
-  "about.timeline.1.title": { fr: "Création à Casablanca", en: "Founded in Casablanca" },
-  "about.timeline.1.text":  { fr: "Premier bureau boulevard d'Anfa. Deux collaborateurs, quatre mandats.", en: "First office on boulevard d'Anfa. Two staff, four mandates." },
-  "about.timeline.2.year":  { fr: "2019", en: "2019" },
-  "about.timeline.2.title": { fr: "Ouverture de Marrakech", en: "Marrakech opening" },
-  "about.timeline.2.text":  { fr: "Antenne dédiée aux villas de la Palmeraie et aux riads de la Médina.", en: "A dedicated office for Palmeraie villas and Medina riads." },
-  "about.timeline.3.year":  { fr: "2022", en: "2022" },
-  "about.timeline.3.title": { fr: "Pôle investissement", en: "Investment desk" },
-  "about.timeline.3.text":  { fr: "Analyse de rendement, montage locatif et accompagnement fiscal.", en: "Yield analysis, rental structuring and tax guidance." },
-  "about.timeline.4.year":  { fr: "2025", en: "2025" },
-  "about.timeline.4.title": { fr: "450 transactions", en: "450 transactions" },
-  "about.timeline.4.text":  { fr: "Onze collaborateurs, deux bureaux, une clientèle sur trois continents.", en: "Eleven staff, two offices, clients across three continents." },
+  "about.method.eyebrow": { fr: "La méthode", en: "The method" },
+  "about.method.title":   { fr: "Comment nous travaillons", en: "How we work" },
+  "about.method.1.title": { fr: "Écouter avant de montrer", en: "Listen before showing" },
+  "about.method.1.text":  { fr: "Le premier rendez-vous ne porte pas sur un bien, mais sur votre projet : usage, horizon, budget réel, contraintes de famille ou de fiscalité.", en: "The first meeting is not about a property but about your project: how you will use it, your horizon, your real budget, family or tax constraints." },
+  "about.method.2.title": { fr: "Sélectionner court", en: "Keep the selection short" },
+  "about.method.2.text":  { fr: "Nous présentons quatre ou cinq biens argumentés plutôt que trente. Une partie de ce que nous proposons n'est jamais publiée en ligne.", en: "We present four or five properties with reasons, not thirty. Part of what we show is never published online." },
+  "about.method.3.title": { fr: "Vérifier avant de proposer", en: "Verify before proposing" },
+  "about.method.3.text":  { fr: "Titre foncier, autorisations, charges de copropriété, servitudes. Tout est contrôlé avant qu'un bien ne vous soit présenté, pas après votre offre.", en: "Land title, permits, service charges, easements. Everything is checked before a property reaches you, not after your offer." },
+  "about.method.4.title": { fr: "Accompagner jusqu'au bout", en: "See it through" },
+  "about.method.4.text":  { fr: "Négociation, notaire, financement, remise des clés. Le même interlocuteur du premier appel à la signature, sans dossier qui change de mains.", en: "Negotiation, notary, financing, handover. The same contact from the first call to signature, with no file changing hands." },
 
   "about.values.eyebrow": { fr: "Nos engagements", en: "Our commitments" },
   "about.values.title":   { fr: "Ce sur quoi nous ne transigeons pas", en: "Where we do not compromise" },
@@ -269,19 +255,6 @@ window.HOMY_TEXT = {
   "about.values.3.text":  { fr: "Chaque bien est photographié par un professionnel, à nos frais, sans exception.", en: "Every property is photographed by a professional, at our expense, without exception." },
   "about.values.4.title": { fr: "Trois langues", en: "Three languages" },
   "about.values.4.text":  { fr: "Français, anglais, arabe. Nos clients sont marocains, européens et du Golfe.", en: "French, English, Arabic. Our clients are Moroccan, European and from the Gulf." },
-
-  "about.credentials.eyebrow": { fr: "Références", en: "Credentials" },
-  "about.credentials.title":   { fr: "Cadre et affiliations", en: "Framework and affiliations" },
-  "about.credentials.1": { fr: "Société inscrite au Registre du Commerce de Casablanca", en: "Company registered with the Casablanca Commercial Register" },
-  "about.credentials.2": { fr: "Membre de la Fédération Nationale des Agents Immobiliers", en: "Member of the National Federation of Real Estate Agents" },
-  "about.credentials.3": { fr: "Assurance responsabilité civile professionnelle", en: "Professional indemnity insurance" },
-  "about.credentials.4": { fr: "Partenariats notariaux à Casablanca et Marrakech", en: "Notarial partnerships in Casablanca and Marrakech" },
-  "about.credentials.5": { fr: "Conformité aux obligations de vigilance anti-blanchiment", en: "Compliance with anti-money-laundering due diligence obligations" },
-  "about.credentials.6": { fr: "Photographes et home stagers partenaires exclusifs", en: "Exclusive partner photographers and home stagers" },
-  "about.credentials.note": {
-    fr: "Les mentions ci-dessus sont fournies à titre indicatif et doivent être mises à jour avec vos informations légales réelles avant la mise en ligne du site.",
-    en: "The details above are placeholders and should be updated with your actual legal information before the site goes live."
-  },
 
   /* -------------------------------------------------------- PAGE: INVEST */
   "invest.hero.eyebrow": { fr: "Guide", en: "Guide" },
@@ -308,14 +281,14 @@ window.HOMY_TEXT = {
     fr: "Rendements bruts annuels observés, avant charges et fiscalité. Les fourchettes varient selon l'emplacement exact, l'état du bien et le mode de location.",
     en: "Observed annual gross yields, before charges and taxation. Ranges vary with exact location, condition and letting strategy."
   },
-  "invest.yields.1.label": { fr: "Location longue durée, Casablanca", en: "Long-term let, Casablanca" },
+  "invest.yields.1.label": { fr: "Casablanca, longue durée", en: "Casablanca, long-term let" },
   "invest.yields.1.value": { fr: "4 – 6 %", en: "4 – 6%" },
-  "invest.yields.2.label": { fr: "Location longue durée, Marrakech", en: "Long-term let, Marrakech" },
+  "invest.yields.2.label": { fr: "Marrakech, longue durée", en: "Marrakech, long-term let" },
   "invest.yields.2.value": { fr: "5 – 7 %", en: "5 – 7%" },
-  "invest.yields.3.label": { fr: "Location saisonnière, Marrakech", en: "Short-term let, Marrakech" },
+  "invest.yields.3.label": { fr: "Marrakech, saisonnier", en: "Marrakech, short-term let" },
   "invest.yields.3.value": { fr: "7 – 11 %", en: "7 – 11%" },
-  "invest.yields.4.label": { fr: "Appréciation annuelle moyenne", en: "Average annual appreciation" },
-  "invest.yields.4.value": { fr: "3 – 5 %", en: "3 – 5%" },
+  "invest.yields.4.label": { fr: "Tanger, longue durée", en: "Tangier, long-term let" },
+  "invest.yields.4.value": { fr: "5 – 8 %", en: "5 – 8%" },
   "invest.yields.note": {
     fr: "Chiffres indicatifs destinés à illustrer les ordres de grandeur du marché. Ils ne constituent pas un conseil en investissement et doivent être vérifiés au cas par cas.",
     en: "Indicative figures intended to illustrate market orders of magnitude. They do not constitute investment advice and should be verified case by case."
@@ -370,6 +343,37 @@ window.HOMY_TEXT = {
     en: "A stable, low-speculation market underpinned by the civil service, embassies and international organisations. Souissi, Agdal and Hay Riad concentrate premium demand. More modest yields but highly reliable tenants and long leases."
   },
   "invest.city.rabat.best": { fr: "Idéal pour : locataires fiables et baux longs", en: "Best for: reliable tenants and long leases" },
+
+  "invest.nonres.eyebrow": { fr: "Non-résidents", en: "Non-residents" },
+  "invest.nonres.title":   { fr: "Acheter depuis l'étranger", en: "Buying from abroad" },
+  "invest.nonres.p1": {
+    fr: "Aucune autorisation préalable n'est nécessaire pour acquérir un bien immobilier urbain au Maroc en tant qu'étranger, résident ou non. Vous achetez en pleine propriété, votre nom est inscrit au titre foncier, et vos droits sont les mêmes que ceux d'un acheteur marocain. Seul le foncier agricole reste soumis à autorisation.",
+    en: "No prior authorisation is required for a foreign national, resident or not, to buy urban property in Morocco. You buy in full ownership, your name is entered on the land title, and your rights are the same as a Moroccan buyer's. Only agricultural land remains subject to authorisation."
+  },
+  "invest.nonres.1.title": { fr: "Déclarez l'investissement", en: "Declare the investment" },
+  "invest.nonres.1.text": {
+    fr: "Faites transiter les fonds par une banque marocaine et conservez le certificat de cession de devises. C'est ce document qui vous permettra, plus tard, de rapatrier le produit de la vente et les loyers dans votre pays.",
+    en: "Route the funds through a Moroccan bank and keep the foreign-currency conversion certificate. That document is what later allows you to repatriate sale proceeds and rental income to your own country."
+  },
+  "invest.nonres.2.title": { fr: "Ouvrez un compte en dirhams convertibles", en: "Open a convertible dirham account" },
+  "invest.nonres.2.text": {
+    fr: "Ce type de compte, ouvert en quelques jours avec un passeport, sert à payer le bien, à recevoir les loyers et à ressortir les fonds sans blocage.",
+    en: "This kind of account, opened within a few days with a passport, is used to pay for the property, receive rent and move funds back out without restriction."
+  },
+  "invest.nonres.3.title": { fr: "Vous n'avez pas à être présent", en: "You need not be present" },
+  "invest.nonres.3.text": {
+    fr: "Une procuration établie devant notaire, ou au consulat du Maroc de votre pays, permet de signer sans vous déplacer. En pratique, la plupart de nos clients étrangers ne viennent qu'une fois, pour les visites.",
+    en: "A power of attorney drawn up before a notary, or at a Moroccan consulate in your country, allows signature without travelling. In practice most of our overseas clients come once, for the viewings."
+  },
+  "invest.nonres.4.title": { fr: "Prévoyez la fiscalité des deux côtés", en: "Plan for tax on both sides" },
+  "invest.nonres.4.text": {
+    fr: "Le Maroc a signé des conventions de non-double imposition avec la France, la Belgique, l'Espagne, le Royaume-Uni et de nombreux autres pays. Faites vérifier votre situation par un conseil dans votre pays de résidence avant de signer.",
+    en: "Morocco has double-taxation treaties with France, Belgium, Spain, the United Kingdom and many other countries. Have your position checked by an adviser in your country of residence before signing."
+  },
+  "invest.nonres.note": {
+    fr: "Informations générales, valables au moment de la rédaction. Elles ne remplacent pas l'avis de votre notaire ni celui de votre conseiller fiscal.",
+    en: "General information, correct at the time of writing. It does not replace advice from your notary or your tax adviser."
+  },
 
   "invest.steps.eyebrow": { fr: "En pratique", en: "In practice" },
   "invest.steps.title":   { fr: "Comment se déroule une acquisition", en: "How an acquisition unfolds" },

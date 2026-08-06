@@ -42,7 +42,7 @@
   },
 
   {
-    "id": "villa-californie",
+    "id": "villa-ain-diab",
     "reference": "HOMY-CAS-002",
     "status": "sale",
     "type": "villa",
@@ -57,18 +57,18 @@
     "floorsTotal": 2,
     "parking": 4,
     "year": 2019,
-    "neighbourhood": { "fr": "Californie", "en": "Californie" },
+    "neighbourhood": { "fr": "Aïn Diab", "en": "Aïn Diab" },
     "title": {
-      "fr": "Villa contemporaine avec piscine et jardin paysager",
-      "en": "Contemporary villa with pool and landscaped garden"
+      "fr": "Villa contemporaine avec piscine, à cinq minutes de l'océan",
+      "en": "Contemporary villa with pool, five minutes from the ocean"
     },
     "description": {
       "fr": "Signée par un architecte casablancais reconnu, cette villa de 620 m² habitables s'inscrit sur un terrain paysager de 1 450 m². Le rez-de-chaussée articule un double séjour, une salle à manger de réception, une cuisine professionnelle et une suite d'amis. À l'étage, quatre chambres en suite dont une master de 70 m² avec terrasse privative. Piscine à débordement chauffée, pool house, hammam, salle de sport et logement de gardien indépendant.",
       "en": "Designed by a leading Casablanca architect, this 620 sqm villa sits within 1,450 sqm of landscaped grounds. The ground floor unfolds as a double reception room, formal dining room, professional kitchen and guest suite. Upstairs, four en-suite bedrooms including a 70 sqm master with private terrace. Heated infinity pool, pool house, hammam, gym and independent caretaker's quarters."
     },
     "neighbourhoodDescription": {
-      "fr": "Californie est le quartier résidentiel de villas par excellence de Casablanca. Situé sur les hauteurs, il offre un air plus pur, de grandes parcelles et une tranquillité rare à quinze minutes du centre. Écoles internationales, golf d'Anfa et Morocco Mall accessibles en moins de dix minutes.",
-      "en": "Californie is Casablanca's premier villa district. Set on the heights, it offers cleaner air, generous plots and a rare calm just fifteen minutes from the centre. International schools, the Anfa golf course and Morocco Mall are all within ten minutes."
+      "fr": "Aïn Diab est la façade balnéaire de Casablanca : plages, clubs et restaurants en front de mer, avec en retrait un tissu résidentiel de villas sur de grandes parcelles. Écoles internationales, golf d'Anfa et Morocco Mall sont accessibles en moins de dix minutes, et le secteur bénéficie directement de la requalification de la Corniche.",
+      "en": "Aïn Diab is Casablanca's seafront: beaches, clubs and waterfront restaurants, backed by a residential fabric of villas on generous plots. International schools, the Anfa golf course and Morocco Mall are within ten minutes, and the area benefits directly from the Corniche regeneration."
     },
     "finishes": {
       "fr": ["Structure béton avec isolation renforcée", "Double vitrage Technal", "Cuisine Boffi", "Piscine à débordement chauffée 14 m", "Hammam traditionnel en tadelakt", "Panneaux solaires thermiques", "Système de sécurité et vidéosurveillance"],
@@ -294,13 +294,13 @@
   },
 
   {
-    "id": "appartement-gauthier",
+    "id": "appartement-racine-location",
     "reference": "HOMY-CAS-008",
     "status": "rent",
     "type": "apartment",
     "city": "casablanca",
     "featured": false,
-    "price": 8000,
+    "price": 8500,
     "surface": 92,
     "terrace": 8,
     "rooms": 2,
@@ -309,18 +309,18 @@
     "floorsTotal": 6,
     "parking": 1,
     "year": 2016,
-    "neighbourhood": { "fr": "Gauthier", "en": "Gauthier" },
+    "neighbourhood": { "fr": "Racine", "en": "Racine" },
     "title": {
-      "fr": "Deux chambres meublé au cœur de Gauthier",
-      "en": "Furnished two-bedroom in central Gauthier"
+      "fr": "Deux chambres meublé au cœur de Racine",
+      "en": "Furnished two-bedroom in central Racine"
     },
     "description": {
-      "fr": "Appartement meublé de 92 m² au deuxième étage, dans une petite copropriété calme de la rue Jean Jaurès. Séjour avec balcon, cuisine équipée, deux chambres dont une avec dressing, salle de bains rénovée. Immeuble avec ascenseur et gardien. Une place de parking. Charges de copropriété incluses dans le loyer.",
-      "en": "A furnished 92 sqm apartment on the second floor of a quiet small building on rue Jean Jaurès. Living room with balcony, fitted kitchen, two bedrooms one with dressing room, renovated bathroom. Lift and caretaker in the building. One parking space. Service charges included in the rent."
+      "fr": "Appartement meublé de 92 m² au deuxième étage, dans une petite copropriété calme à deux pas de la rue Jean Jaurès. Séjour avec balcon, cuisine équipée, deux chambres dont une avec dressing, salle de bains rénovée. Immeuble avec ascenseur et gardien. Une place de parking. Charges de copropriété incluses dans le loyer.",
+      "en": "A furnished 92 sqm apartment on the second floor of a quiet small building, steps from rue Jean Jaurès. Living room with balcony, fitted kitchen, two bedrooms one with dressing room, renovated bathroom. Lift and caretaker in the building. One parking space. Service charges included in the rent."
     },
     "neighbourhoodDescription": {
-      "fr": "Gauthier est le quartier le plus vivant du centre de Casablanca : librairies, restaurants, terrasses et vie nocturne. Entièrement praticable à pied, très prisé des jeunes cadres et des expatriés, il conserve une tension locative permanente et une vacance quasi nulle.",
-      "en": "Gauthier is central Casablanca's liveliest quarter: bookshops, restaurants, terraces and nightlife. Entirely walkable and popular with young professionals and expatriates, it maintains constant rental pressure and near-zero vacancy."
+      "fr": "Racine est le quartier de la vie casablancaise contemporaine : cafés, galeries, brasseries et boutiques indépendantes, le tout praticable à pied. Très prisé des jeunes cadres et des expatriés, il conserve une tension locative permanente et une vacance quasi nulle.",
+      "en": "Racine is where contemporary Casablanca lives: cafés, galleries, brasseries and independent boutiques, all walkable. Popular with young professionals and expatriates, it maintains constant rental pressure and near-zero vacancy."
     },
     "finishes": {
       "fr": ["Meublé et décoré", "Parquet stratifié chêne clair", "Cuisine équipée", "Climatisation dans les chambres", "Ascenseur et gardien", "Charges incluses"],
