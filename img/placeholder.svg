@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="HOMY">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12293F"/>
+      <stop offset="55%" stop-color="#0A1C2E"/>
+      <stop offset="100%" stop-color="#061320"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect x="54" y="54" width="1092" height="792" fill="none" stroke="#C0A062" stroke-opacity="0.35" stroke-width="1.5"/>
+  <g opacity="0.72">
+    <line x1="552" y1="404" x2="648" y2="404" stroke="#C0A062" stroke-width="1.5"/>
+    <text x="600" y="472" font-family="Georgia, 'Times New Roman', serif" font-size="52"
+          letter-spacing="18" fill="#C0A062" text-anchor="middle">HOMY</text>
+    <text x="600" y="508" font-family="Helvetica, Arial, sans-serif" font-size="12"
+          letter-spacing="8" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">PREMIUM REAL ESTATE</text>
+    <line x1="552" y1="548" x2="648" y2="548" stroke="#C0A062" stroke-width="1.5"/>
+  </g>
+</svg>

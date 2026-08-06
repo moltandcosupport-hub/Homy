@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOMY Premium Real Estate — Immobilier d'exception à Casablanca et Marrakech</title>
+<meta name="description" content="Agence immobilière haut de gamme à Casablanca et Marrakech. Appartements, villas, penthouses et riads d'exception. Vente, location et conseil en investissement depuis 2017.">
+<meta name="theme-color" content="#0A1C2E">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="HOMY Premium Real Estate">
+<meta property="og:description" content="L'immobilier d'exception au Maroc. Casablanca · Marrakech.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A1C2E'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23C0A062' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1900&q=80">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="home">
+
+<div data-header data-header-transparent></div>
+
+<!-- ============================================================ HERO -->
+<section class="hero">
+  <div class="hero__media">
+    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1900&q=80"
+         srcset="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=80 900w,
+                 https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=80 1400w,
+                 https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1900&q=80 1900w,
+                 https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2400&q=80 2400w"
+         sizes="100vw"
+         alt="Villa contemporaine avec piscine à débordement, Casablanca"
+         fetchpriority="high" decoding="async" width="1900" height="1267">
+  </div>
+
+  <div class="hero__inner">
+    <div class="container">
+      <span class="eyebrow eyebrow--light" data-i18n="home.hero.eyebrow"></span>
+      <h1 data-i18n="home.hero.title"></h1>
+      <p class="hero__text" data-i18n="home.hero.subtitle"></p>
+      <div class="btn-row">
+        <a class="btn btn--gold" href="proprietes.html" data-i18n="common.viewAll"></a>
+        <a class="btn btn--ghost" href="a-propos.html" data-i18n="founder.cta"></a>
+      </div>
+    </div>
+  </div>
+
+  <span class="hero__scroll" data-i18n="home.hero.scroll"></span>
+</section>
+
+<!-- ========================================================== SEARCH -->
+<div class="search-wrap">
+  <div class="container">
+    <div class="search-panel">
+      <form id="heroSearch" novalidate>
+        <div class="field">
+          <label class="field__label" for="s-status" data-i18n="search.status"></label>
+          <select id="s-status" name="status"></select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="s-city" data-i18n="search.city"></label>
+          <select id="s-city" name="city"></select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="s-type" data-i18n="search.type"></label>
+          <select id="s-type" name="type"></select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="s-budget" data-i18n="search.budget"></label>
+          <select id="s-budget" name="budget"></select>
+        </div>
+        <button type="submit" class="btn btn--gold" data-i18n="search.submit"></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ======================================================== FEATURED -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow" data-i18n="home.featured.eyebrow"></span>
+      <div class="rule"></div>
+      <h2 data-i18n="home.featured.title"></h2>
+      <p class="lead" data-i18n="home.featured.text"></p>
+    </div>
+
+    <div class="grid grid--3 cards--featured" id="featuredGrid"></div>
+
+    <div class="btn-row" data-reveal>
+      <a class="link-arrow" href="proprietes.html">
+        <span data-i18n="common.viewAll"></span>
+        <svg width="20" height="10" viewBox="0 0 20 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h18M14 1l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= WHY HOMY -->
+<section class="section section--navy">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow eyebrow--light" data-i18n="home.why.eyebrow"></span>
+      <div class="rule"></div>
+      <h2 data-i18n="home.why.title"></h2>
+    </div>
+
+    <div class="grid grid--4">
+      <article class="feature" data-reveal data-reveal-delay="1">
+        <div class="feature__num">01</div>
+        <h3 data-i18n="home.why.1.title"></h3>
+        <p data-i18n="home.why.1.text"></p>
+      </article>
+      <article class="feature" data-reveal data-reveal-delay="2">
+        <div class="feature__num">02</div>
+        <h3 data-i18n="home.why.2.title"></h3>
+        <p data-i18n="home.why.2.text"></p>
+      </article>
+      <article class="feature" data-reveal data-reveal-delay="3">
+        <div class="feature__num">03</div>
+        <h3 data-i18n="home.why.3.title"></h3>
+        <p data-i18n="home.why.3.text"></p>
+      </article>
+      <article class="feature" data-reveal data-reveal-delay="4">
+        <div class="feature__num">04</div>
+        <h3 data-i18n="home.why.4.title"></h3>
+        <p data-i18n="home.why.4.text"></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== STATS -->
+<div class="stats">
+  <div class="stat" data-reveal data-reveal-delay="1">
+    <div class="stat__value" data-i18n="stats.1.value"></div>
+    <div class="stat__label" data-i18n="stats.1.label"></div>
+  </div>
+  <div class="stat" data-reveal data-reveal-delay="2">
+    <div class="stat__value" data-i18n="stats.2.value"></div>
+    <div class="stat__label" data-i18n="stats.2.label"></div>
+  </div>
+  <div class="stat" data-reveal data-reveal-delay="3">
+    <div class="stat__value" data-i18n="stats.3.value"></div>
+    <div class="stat__label" data-i18n="stats.3.label"></div>
+  </div>
+  <div class="stat" data-reveal data-reveal-delay="4">
+    <div class="stat__value" data-i18n="stats.4.value"></div>
+    <div class="stat__label" data-i18n="stats.4.label"></div>
+  </div>
+</div>
+
+<!-- ========================================================= FOUNDER -->
+<section class="section">
+  <div class="container">
+    <div class="founder">
+      <div class="founder__media" data-reveal>
+        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80"
+             alt="Salma Bennani, fondatrice de HOMY Premium Real Estate"
+             loading="lazy" decoding="async" width="900" height="1200">
+      </div>
+      <div data-reveal data-reveal-delay="2">
+        <span class="eyebrow" data-i18n="founder.eyebrow"></span>
+        <div class="rule"></div>
+        <p class="founder__quote" data-i18n="founder.quote"></p>
+        <p class="founder__name" data-i18n="founder.name"></p>
+        <p class="founder__role" data-i18n="founder.role"></p>
+        <p class="lead" data-i18n="founder.text"></p>
+        <div class="btn-row">
+          <a class="link-arrow" href="a-propos.html">
+            <span data-i18n="founder.cta"></span>
+            <svg width="20" height="10" viewBox="0 0 20 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h18M14 1l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== TESTIMONIALS -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head section-head--center" data-reveal>
+      <span class="eyebrow" data-i18n="testimonials.eyebrow"></span>
+      <div class="rule"></div>
+      <h2 data-i18n="testimonials.title"></h2>
+    </div>
+
+    <div class="grid grid--3">
+      <blockquote class="quote" data-reveal data-reveal-delay="1">
+        <div class="quote__mark">“</div>
+        <p class="quote__text" data-i18n="testimonial.1.text"></p>
+        <cite class="quote__author" data-i18n="testimonial.1.author"></cite>
+        <div class="quote__meta" data-i18n="testimonial.1.meta"></div>
+      </blockquote>
+      <blockquote class="quote" data-reveal data-reveal-delay="2">
+        <div class="quote__mark">“</div>
+        <p class="quote__text" data-i18n="testimonial.2.text"></p>
+        <cite class="quote__author" data-i18n="testimonial.2.author"></cite>
+        <div class="quote__meta" data-i18n="testimonial.2.meta"></div>
+      </blockquote>
+      <blockquote class="quote" data-reveal data-reveal-delay="3">
+        <div class="quote__mark">“</div>
+        <p class="quote__text" data-i18n="testimonial.3.text"></p>
+        <cite class="quote__author" data-i18n="testimonial.3.author"></cite>
+        <div class="quote__meta" data-i18n="testimonial.3.meta"></div>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= CTA -->
+<section class="section cta-band">
+  <div class="cta-band__media">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+         alt="" loading="lazy" decoding="async" width="1600" height="1067">
+  </div>
+  <div class="container">
+    <div data-reveal>
+      <span class="eyebrow eyebrow--light" data-i18n="cta.eyebrow"></span>
+      <div class="rule"></div>
+      <h2 data-i18n="cta.title"></h2>
+      <p class="lead" style="margin-top:22px" data-i18n="cta.text"></p>
+      <div class="btn-row">
+        <a class="btn btn--gold" href="contact.html" data-i18n="cta.button"></a>
+        <a class="btn btn--ghost" href="proprietes.html" data-i18n="common.viewAll"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-footer></div>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/listings-backup.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>
