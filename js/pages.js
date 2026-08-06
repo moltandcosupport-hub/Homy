@@ -73,6 +73,20 @@
     H.guardImages(container);
   }
 
+  /* Grey shapes shown while the property list is still loading, so the page
+     never flashes an empty hole.                                          */
+  function showSkeletons(container, howMany) {
+    if (!container) return;
+    var one =
+      '<div class="card card-skeleton">' +
+        '<div class="card-skeleton__media"></div>' +
+        '<div class="card-skeleton__line card-skeleton__line--short"></div>' +
+        '<div class="card-skeleton__line"></div>' +
+        '<div class="card-skeleton__line card-skeleton__line--short"></div>' +
+      '</div>';
+    container.innerHTML = new Array(howMany + 1).join(one);
+  }
+
   /* ================================================== SEARCH / FILTER UI */
 
   var BUDGETS = {
@@ -157,6 +171,7 @@
 
   function initHome() {
     var featured = $("#featuredGrid");
+    showSkeletons(featured, 6);
 
     DATA.load().then(function (list) {
       var picks = list.filter(function (p) { return p.featured; }).slice(0, 6);
@@ -258,6 +273,7 @@
 
     populateForm(form);
     applyUrlToForm();
+    showSkeletons(grid, 6);
 
     form.addEventListener("change", function (e) {
       if (e.target.name === "status") {
@@ -293,6 +309,10 @@
 
   /* ==================================================== SINGLE PROPERTY */
 
+  var galleryStep = null;      /* function that moves the gallery */
+  var galleryIndex = 0;        /* photo currently on screen */
+  var galleryKeysBound = false;
+
   function initProperty() {
     var id = params().get("id");
     var root = $("#propertyRoot");
@@ -309,6 +329,7 @@
 
       var similar = DATA.similar(list, p, 3);
       render(p, similar);
+      describeForSearchEngines(p);
 
       document.addEventListener("homy:langchange", function () { render(p, similar); });
     });
@@ -322,6 +343,55 @@
       H.translate(root);
       H.guardImages(root);
       H.observeReveals(root);
+    }
+
+    /* Describes this property to Google, and fills in the preview card that
+       appears when someone shares the link on WhatsApp or Facebook.       */
+    function describeForSearchEngines(p) {
+      var title = H.propertyTitle(p);
+      var summary = H.propertyDesc(p).slice(0, 200);
+
+      var setMeta = function (attr, key, content) {
+        var tag = document.head.querySelector("meta[" + attr + '="' + key + '"]');
+        if (!tag) {
+          tag = document.createElement("meta");
+          tag.setAttribute(attr, key);
+          document.head.appendChild(tag);
+        }
+        tag.setAttribute("content", content);
+      };
+
+      setMeta("name", "description", summary);
+      setMeta("property", "og:title", title + " — HOMY");
+      setMeta("property", "og:description", summary);
+      setMeta("property", "og:type", "website");
+      if (p.images && p.images[0]) setMeta("property", "og:image", p.images[0]);
+
+      H.addStructuredData({
+        "@context": "https://schema.org",
+        "@type": "Residence",
+        name: title,
+        description: H.propertyDesc(p),
+        image: p.images || [],
+        numberOfRooms: p.rooms,
+        numberOfBathroomsTotal: p.bathrooms,
+        floorSize: { "@type": "QuantitativeValue", value: p.surface, unitCode: "MTK" },
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: H.propertyHood(p),
+          addressRegion: H.t("city." + p.city),
+          addressCountry: "MA"
+        },
+        offers: {
+          "@type": "Offer",
+          price: p.price,
+          priceCurrency: "MAD",
+          availability: "https://schema.org/InStock",
+          businessFunction: p.status === "rent"
+            ? "http://purl.org/goodrelations/v1#LeaseOut"
+            : "http://purl.org/goodrelations/v1#Sell"
+        }
+      });
     }
 
     /* ---- gallery ---- */
@@ -349,6 +419,7 @@
       function show(next) {
         if (!images.length) return;
         index = (next + images.length) % images.length;
+        galleryIndex = index;
         $$("img", stage).forEach(function (img, i) { img.classList.toggle("is-active", i === index); });
         $$("button", thumbs).forEach(function (b, i) { b.classList.toggle("is-active", i === index); });
         if (counter) counter.textContent = (index + 1) + " / " + images.length;
@@ -360,10 +431,20 @@
         var btn = e.target.closest("button[data-index]");
         if (btn) show(parseInt(btn.getAttribute("data-index"), 10));
       };
-      document.onkeydown = function (e) {
-        if (e.key === "ArrowLeft") show(index - 1);
-        if (e.key === "ArrowRight") show(index + 1);
-      };
+
+      /* Left and right arrow keys move through the photos. Registered once,
+         so it never overwrites another key handler on the page.            */
+      galleryStep = show;
+      if (!galleryKeysBound) {
+        galleryKeysBound = true;
+        document.addEventListener("keydown", function (e) {
+          if (!galleryStep) return;
+          var tag = (document.activeElement || {}).tagName;
+          if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+          if (e.key === "ArrowLeft")  { galleryStep(galleryIndex - 1); }
+          if (e.key === "ArrowRight") { galleryStep(galleryIndex + 1); }
+        });
+      }
 
       show(0);
     }
@@ -469,40 +550,78 @@
     paintSubjects();
     document.addEventListener("homy:langchange", paintSubjects);
 
-    /* The form opens the visitor's email app with everything pre-filled.
-       No server needed, which keeps the site a simple set of files.      */
+    /* Sending a message.
+       Once the site is published on Netlify the form posts straight to
+       Netlify and the message lands in your inbox. If that is unavailable —
+       you are previewing the files from your own computer, or the network
+       fails — we fall back to opening the visitor's email app with the
+       message already written.                                            */
     var form = $("#contactForm");
     if (!form) return;
+
+    var status = $("#formStatus");
+    var submitBtn = form.querySelector('button[type="submit"]');
+
+    function value(name) {
+      var f = form.querySelector('[name="' + name + '"]');
+      return f ? f.value.trim() : "";
+    }
+
+    function subjectLabel() {
+      var s = $("#contactSubject");
+      return s && s.selectedIndex >= 0 ? s.options[s.selectedIndex].text : "";
+    }
+
+    function say(key) {
+      if (!status) return;
+      status.textContent = H.t(key);
+      status.classList.add("is-visible");
+    }
+
+    function openEmailApp() {
+      var body = [
+        H.t("contact.form.name") + ": " + value("name"),
+        H.t("contact.form.email") + ": " + value("email"),
+        H.t("contact.form.phone") + ": " + value("phone"),
+        H.t("contact.form.subject") + ": " + subjectLabel(),
+        "",
+        value("message")
+      ].join("\n");
+
+      window.location.href = "mailto:" + (C.email || "") +
+        "?subject=" + encodeURIComponent("HOMY — " + subjectLabel() + " — " + value("name")) +
+        "&body=" + encodeURIComponent(body);
+
+      say("contact.form.success");
+    }
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!form.reportValidity()) return;
 
-      var get = function (name) {
-        var f = form.querySelector('[name="' + name + '"]');
-        return f ? f.value.trim() : "";
-      };
-      var subjectSelect = $("#contactSubject");
-      var subjectLabel = subjectSelect ? subjectSelect.options[subjectSelect.selectedIndex].text : "";
+      var online = window.fetch && /^https?:$/.test(window.location.protocol);
+      if (!online) { openEmailApp(); return; }
 
-      var body = [
-        H.t("contact.form.name") + ": " + get("name"),
-        H.t("contact.form.email") + ": " + get("email"),
-        H.t("contact.form.phone") + ": " + get("phone"),
-        H.t("contact.form.subject") + ": " + subjectLabel,
-        "",
-        get("message")
-      ].join("\n");
+      if (submitBtn) submitBtn.disabled = true;
+      say("contact.form.sending");
 
-      window.location.href = "mailto:" + (C.email || "") +
-        "?subject=" + encodeURIComponent("HOMY — " + subjectLabel + " — " + get("name")) +
-        "&body=" + encodeURIComponent(body);
-
-      var status = $("#formStatus");
-      if (status) {
-        status.textContent = H.t("contact.form.success");
-        status.classList.add("is-visible");
-      }
+      fetch(form.getAttribute("action") || window.location.pathname, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString()
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          form.reset();
+          paintSubjects();
+          say("contact.form.sent");
+        })
+        .catch(function () {
+          openEmailApp();
+        })
+        .then(function () {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 

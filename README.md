@@ -99,6 +99,7 @@ propriete.html      One property (the same page serves all of them)
 a-propos.html       About / the founder
 investir.html       Investment guide
 contact.html        Contact page
+404.html            Shown if someone follows a broken link
 
 listings.json       ← YOUR PROPERTIES
 
@@ -112,6 +113,10 @@ js/data.js          Reads listings.json
 js/listings-backup.js   See the note below
 
 img/placeholder.svg Shown if a photo is missing
+
+robots.txt          Tells Google it may index the site
+sitemap.xml         Lists the pages for Google — update the domain
+_headers            Makes repeat visits faster (Netlify reads it)
 ```
 
 ### The note about `js/listings-backup.js`
@@ -141,11 +146,17 @@ look at it there, which is simpler.
 - [ ] The figures on the Investment page are market estimates for illustration;
       have them checked before publishing them as advice
 
-### One thing to know about the contact form
+- [ ] Replace `www.homy.ma` with your real domain in `sitemap.xml` and
+      `robots.txt` once the domain is connected
 
-The form opens the visitor's own email program with the message already filled
-in. That needs no server, which is why the site stays this simple.
+### How the contact form works
 
-If you'd rather receive messages directly in your inbox, Netlify does that for
-free: add `netlify` and `name="contact"` to the `<form>` tag in `contact.html`.
-Ask for help with that when you need it.
+Once the site is published on Netlify, messages arrive **in your inbox
+automatically**. There is nothing to set up — Netlify recognises the form on
+its own. You'll find every message under **Forms** in your Netlify dashboard,
+and you can add the email address that should be notified there.
+
+If someone fills the form while looking at the files on their own computer,
+where there is no Netlify to receive it, the site quietly falls back to opening
+their email program with the message already written. Either way the message
+reaches you.

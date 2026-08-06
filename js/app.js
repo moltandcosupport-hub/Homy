@@ -167,8 +167,9 @@
   function navLinks(cls) {
     var page = currentPage();
     return PAGES.map(function (p) {
-      var active = p.id === page ? " is-active" : "";
-      return '<a class="' + cls + active + '" href="' + p.href + '" data-i18n="' + p.key + '"></a>';
+      var active = p.id === page;
+      return '<a class="' + cls + (active ? " is-active" : "") + '" href="' + p.href + '"' +
+             (active ? ' aria-current="page"' : "") + ' data-i18n="' + p.key + '"></a>';
     }).join("");
   }
 
@@ -272,6 +273,24 @@
       '</footer>';
   }
 
+  /* A "skip to content" link for keyboard and screen-reader users. It stays
+     invisible until it receives focus.                                     */
+  function buildSkipLink() {
+    var target = document.getElementById("main") ||
+                 document.querySelector("main") ||
+                 document.querySelector("body > section");
+    if (!target) return;
+
+    target.id = target.id || "main";
+    if (!target.hasAttribute("tabindex")) target.setAttribute("tabindex", "-1");
+
+    var link = document.createElement("a");
+    link.className = "skip-link";
+    link.href = "#" + target.id;
+    link.setAttribute("data-i18n", "a11y.skip");
+    document.body.insertBefore(link, document.body.firstChild);
+  }
+
   function buildWhatsAppFloat() {
     if (document.querySelector(".wa-float")) return;
     var a = document.createElement("a");
@@ -282,6 +301,39 @@
     a.setAttribute("data-i18n-aria", "a11y.whatsapp");
     a.innerHTML = ICON.whatsapp;
     document.body.appendChild(a);
+  }
+
+  /* --------------------------------------------------- STRUCTURED DATA --
+     A hidden block of information that tells Google and Apple Maps who the
+     agency is, so the business shows up properly in search results.       */
+
+  function addStructuredData(data) {
+    var tag = document.createElement("script");
+    tag.type = "application/ld+json";
+    tag.textContent = JSON.stringify(data);
+    document.head.appendChild(tag);
+  }
+
+  function buildAgencyData() {
+    var socials = [CFG.instagram, CFG.facebook, CFG.linkedin].filter(Boolean);
+
+    addStructuredData({
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      name: "HOMY Premium Real Estate",
+      description: t("footer.about"),
+      telephone: CFG.phonePrimary || undefined,
+      email: CFG.email || undefined,
+      foundingDate: String(CFG.foundedYear || ""),
+      areaServed: ["Casablanca", "Marrakech"],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: CFG.addressLine1 || "",
+        addressLocality: "Casablanca",
+        addressCountry: "MA"
+      },
+      sameAs: socials.length ? socials : undefined
+    });
   }
 
   /* ---------------------------------------------------------- BEHAVIOUR */
@@ -300,19 +352,28 @@
     }
 
     if (burger && drawer) {
-      burger.addEventListener("click", function () {
-        var open = drawer.classList.toggle("is-open");
+      var setMenu = function (open) {
+        drawer.classList.toggle("is-open", open);
         burger.classList.toggle("is-open", open);
         burger.setAttribute("aria-expanded", open ? "true" : "false");
         burger.setAttribute("aria-label", t(open ? "a11y.closeMenu" : "a11y.menu"));
         document.body.classList.toggle("no-scroll", open);
+      };
+
+      burger.addEventListener("click", function () {
+        setMenu(!drawer.classList.contains("is-open"));
       });
+
       drawer.querySelectorAll("a").forEach(function (link) {
-        link.addEventListener("click", function () {
-          drawer.classList.remove("is-open");
-          burger.classList.remove("is-open");
-          document.body.classList.remove("no-scroll");
-        });
+        link.addEventListener("click", function () { setMenu(false); });
+      });
+
+      /* Escape closes the menu and returns focus to the button. */
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && drawer.classList.contains("is-open")) {
+          setMenu(false);
+          burger.focus();
+        }
       });
     }
 
@@ -392,6 +453,7 @@
     escapeHtml: escapeHtml,
     observeReveals: observeReveals,
     guardImages: guardImages,
+    addStructuredData: addStructuredData,
     config: CFG
   };
 
@@ -401,9 +463,11 @@
     document.documentElement.setAttribute("lang", lang);
     buildHeader();
     buildFooter();
+    buildSkipLink();
     buildWhatsAppFloat();
     translate(document);
     syncLangButtons();
+    buildAgencyData();
     wireHeaderBehaviour();
     observeReveals(document);
     guardImages(document);

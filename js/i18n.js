@@ -431,10 +431,12 @@ window.HOMY_TEXT = {
   },
   "contact.form.submit":    { fr: "Envoyer le message", en: "Send message" },
   "contact.form.required":  { fr: "Champs obligatoires", en: "Required fields" },
+  "contact.form.sending":   { fr: "Envoi en cours…", en: "Sending…" },
+  "contact.form.sent":      { fr: "Merci, votre message est bien parti. Nous vous répondons sous 24 heures.", en: "Thank you, your message has been sent. We will reply within 24 hours." },
   "contact.form.success":   { fr: "Merci. Votre message est prêt à être envoyé depuis votre application email.", en: "Thank you. Your message is ready to send from your email application." },
   "contact.form.note": {
-    fr: "Ce formulaire ouvre votre messagerie avec le message pré-rempli. Pour une réponse immédiate, préférez WhatsApp.",
-    en: "This form opens your email application with the message pre-filled. For an immediate reply, use WhatsApp."
+    fr: "Nous répondons à chaque message sous 24 heures. Pour une réponse immédiate, préférez WhatsApp.",
+    en: "We answer every message within 24 hours. For an immediate reply, use WhatsApp."
   },
 
   "contact.info.title":     { fr: "Nos coordonnées", en: "Our details" },
@@ -457,7 +459,16 @@ window.HOMY_TEXT = {
   "footer.legal":     { fr: "Mentions légales", en: "Legal notice" },
   "footer.privacy":   { fr: "Confidentialité", en: "Privacy" },
 
+  /* ------------------------------------------------------ PAGE NOT FOUND */
+  "notfound.eyebrow": { fr: "Erreur 404", en: "Error 404" },
+  "notfound.title":   { fr: "Cette page n'existe pas", en: "This page does not exist" },
+  "notfound.text": {
+    fr: "Le lien que vous avez suivi est incorrect, ou la page a été déplacée. Revenez à l'accueil ou consultez nos propriétés.",
+    en: "The link you followed is incorrect, or the page has moved. Return to the home page or browse our properties."
+  },
+
   /* ------------------------------------------------------- ACCESSIBILITY */
+  "a11y.skip":       { fr: "Aller au contenu", en: "Skip to content" },
   "a11y.menu":       { fr: "Ouvrir le menu", en: "Open menu" },
   "a11y.closeMenu":  { fr: "Fermer le menu", en: "Close menu" },
   "a11y.whatsapp":   { fr: "Nous contacter sur WhatsApp", en: "Contact us on WhatsApp" },

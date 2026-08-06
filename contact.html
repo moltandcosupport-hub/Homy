@@ -49,7 +49,14 @@
         <div class="rule"></div>
         <h2 style="margin-bottom:34px" data-i18n="contact.form.title"></h2>
 
-        <form id="contactForm" novalidate>
+        <!-- Netlify picks this form up automatically once the site is
+             published, and emails every message to the account owner.
+             No server, no plugin, nothing to configure. -->
+        <form id="contactForm" name="contact" method="POST"
+              data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <p hidden><label>Ne pas remplir : <input name="bot-field"></label></p>
+
           <div class="form-grid">
             <div class="form-grid form-grid--2">
               <div class="field">

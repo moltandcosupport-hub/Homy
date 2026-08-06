@@ -1,0 +1,24 @@
+# Netlify reads this file automatically when the site is published.
+# It makes repeat visits faster and adds a few standard safety headers.
+# You do not need to edit it.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Design and code: cached for a year. Publish a new version and Netlify
+# serves it straight away, so this is safe.
+/css/*
+  Cache-Control: public, max-age=31536000
+
+/js/*
+  Cache-Control: public, max-age=31536000
+
+/img/*
+  Cache-Control: public, max-age=31536000
+
+# The property list is checked on every visit, so edits appear immediately.
+/listings.json
+  Cache-Control: public, max-age=0, must-revalidate

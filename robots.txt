@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Replace the address below with your real domain once it is connected,
+# then re-publish. See sitemap.xml in the same folder.
+Sitemap: https://www.homy.ma/sitemap.xml

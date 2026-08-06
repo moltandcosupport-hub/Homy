@@ -217,6 +217,23 @@ p:last-child { margin-bottom: 0; }
 
 @media (min-width: 900px) { .grid { gap: 34px; } }
 
+/* Hidden until a keyboard user tabs onto it */
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 12px 22px;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transform: translateY(-160%);
+  transition: transform var(--fast) var(--ease);
+}
+.skip-link:focus { transform: none; }
+
 .visually-hidden {
   position: absolute !important;
   width: 1px; height: 1px;
@@ -711,6 +728,25 @@ p:last-child { margin-bottom: 0; }
 }
 .card__specs span { display: inline-flex; align-items: center; gap: 7px; }
 .card__specs svg { flex: none; opacity: 0.65; }
+
+/* Shown for the fraction of a second before the properties arrive */
+.card-skeleton { pointer-events: none; }
+.card-skeleton__media {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(100deg, var(--cream-deep) 30%, var(--cream) 50%, var(--cream-deep) 70%);
+  background-size: 300% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+.card-skeleton__line {
+  height: 12px;
+  margin-top: 16px;
+  background: var(--cream-deep);
+}
+.card-skeleton__line--short { width: 45%; }
+@keyframes shimmer {
+  from { background-position: 130% 0; }
+  to   { background-position: -30% 0; }
+}
 
 /* Featured layout on the homepage: first card spans two columns on wide screens */
 @media (min-width: 1060px) {
