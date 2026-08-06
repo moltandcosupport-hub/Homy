@@ -207,6 +207,13 @@
       '</div>';
   }
 
+  /* A phone line in the footer — nothing at all if the number is empty. */
+  function phoneListItem(number) {
+    if (!number) return "";
+    return '<li><a href="tel:' + String(number).replace(/[\s-]/g, "") + '">' +
+           escapeHtml(number) + "</a></li>";
+  }
+
   function buildFooter() {
     var host = document.querySelector("[data-footer]");
     if (!host) return;
@@ -240,8 +247,8 @@
             '<div>' +
               '<p class="footer-title" data-i18n="footer.contact"></p>' +
               '<ul class="footer-list">' +
-                '<li><a href="tel:' + String(CFG.phonePrimary || "").replace(/\s/g, "") + '">' + escapeHtml(CFG.phonePrimary || "") + '</a></li>' +
-                '<li><a href="tel:' + String(CFG.phoneSecondary || "").replace(/\s/g, "") + '">' + escapeHtml(CFG.phoneSecondary || "") + '</a></li>' +
+                phoneListItem(CFG.phonePrimary) +
+                phoneListItem(CFG.phoneSecondary) +
                 '<li><a href="mailto:' + escapeHtml(CFG.email || "") + '">' + escapeHtml(CFG.email || "") + '</a></li>' +
                 '<li>' + escapeHtml(CFG.addressLine1 || "") + '</li>' +
                 '<li>' + escapeHtml(CFG.addressLine2 || "") + '</li>' +

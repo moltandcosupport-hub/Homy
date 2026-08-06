@@ -419,10 +419,15 @@
   function initContact() {
     var C = H.config;
 
-    var phone1 = $("#infoPhone1");
-    if (phone1) { phone1.href = "tel:" + String(C.phonePrimary || "").replace(/\s/g, ""); phone1.textContent = C.phonePrimary || ""; }
-    var phone2 = $("#infoPhone2");
-    if (phone2) { phone2.href = "tel:" + String(C.phoneSecondary || "").replace(/\s/g, ""); phone2.textContent = C.phoneSecondary || ""; }
+    var phones = $("#infoPhones");
+    if (phones) {
+      phones.innerHTML = [C.phonePrimary, C.phoneSecondary]
+        .filter(Boolean)
+        .map(function (n) {
+          return '<a href="tel:' + String(n).replace(/[\s-]/g, "") + '">' + H.escapeHtml(n) + "</a>";
+        })
+        .join("<br>");
+    }
     var mail = $("#infoEmail");
     if (mail) { mail.href = "mailto:" + (C.email || ""); mail.textContent = C.email || ""; }
     var wa = $("#infoWhatsapp");

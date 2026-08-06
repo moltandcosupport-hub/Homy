@@ -13,11 +13,12 @@ window.HOMY_CONFIG = {
   /* --- WhatsApp -----------------------------------------------------------
      Country code + number, digits only. No +, no spaces, no zero at the start.
      Morocco is 212. So 06 61 23 45 67 becomes 212661234567             */
-  whatsapp: "212661234567",
+  whatsapp: "212669782128",
 
-  /* --- Phone numbers (as you want them displayed on screen) --------------- */
-  phonePrimary:   "+212 6 61 23 45 67",
-  phoneSecondary: "+212 5 22 39 12 40",
+  /* --- Phone numbers (as you want them displayed on screen) ---------------
+     Leave phoneSecondary empty ("") and it simply disappears from the site. */
+  phonePrimary:   "+212 6 69 78 21 28",
+  phoneSecondary: "",
 
   /* --- Email -------------------------------------------------------------- */
   email: "contact@homy.ma",
