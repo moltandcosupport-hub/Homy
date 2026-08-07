@@ -12,7 +12,6 @@
 window.HOMY_LISTINGS_BACKUP = [
   {
     "id": "penthouse-triangle-dor",
-    "reference": "HOMY-CAS-001",
     "status": "sale",
     "type": "penthouse",
     "city": "casablanca",
@@ -26,7 +25,10 @@ window.HOMY_LISTINGS_BACKUP = [
     "floorsTotal": 8,
     "parking": 2,
     "year": 2021,
-    "neighbourhood": { "fr": "Triangle d'Or", "en": "Triangle d'Or" },
+    "neighbourhood": {
+      "fr": "Triangle d'Or",
+      "en": "Triangle d'Or"
+    },
     "title": {
       "fr": "Penthouse d'exception avec terrasse panoramique",
       "en": "Exceptional penthouse with panoramic terrace"
@@ -40,21 +42,31 @@ window.HOMY_LISTINGS_BACKUP = [
       "en": "The Triangle d'Or is Casablanca's most sought-after district. Framed by the Anfa, Moulay Youssef and Rachidi boulevards, it gathers the city's finest addresses: fine-dining restaurants, designer boutiques, French and Spanish schools, private clinics. A low-density, tree-lined area where property rarely comes to market."
     },
     "finishes": {
-      "fr": ["Marbre de Carrare au sol", "Menuiserie aluminium à rupture de pont thermique", "Cuisine Bulthaup équipée", "Domotique KNX", "Climatisation gainable", "Ascenseur privatif", "Terrasse avec pergola bioclimatique"],
-      "en": ["Carrara marble flooring", "Thermally broken aluminium joinery", "Fitted Bulthaup kitchen", "KNX home automation", "Ducted air conditioning", "Private lift", "Terrace with bioclimatic pergola"]
+      "fr": [
+        "Marbre de Carrare au sol",
+        "Menuiserie aluminium à rupture de pont thermique",
+        "Cuisine Bulthaup équipée",
+        "Domotique KNX",
+        "Climatisation gainable",
+        "Ascenseur privatif",
+        "Terrasse avec pergola bioclimatique"
+      ],
+      "en": [
+        "Carrara marble flooring",
+        "Thermally broken aluminium joinery",
+        "Fitted Bulthaup kitchen",
+        "KNX home automation",
+        "Ducted air conditioning",
+        "Private lift",
+        "Terrace with bioclimatic pergola"
+      ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80"
+      "img/placeholder.svg"
     ]
   },
-
   {
     "id": "villa-ain-diab",
-    "reference": "HOMY-CAS-002",
     "status": "rent",
     "type": "villa",
     "city": "casablanca",
@@ -68,7 +80,10 @@ window.HOMY_LISTINGS_BACKUP = [
     "floorsTotal": null,
     "parking": null,
     "year": null,
-    "neighbourhood": { "fr": "Aïn Diab", "en": "Aïn Diab" },
+    "neighbourhood": {
+      "fr": "Aïn Diab",
+      "en": "Aïn Diab"
+    },
     "title": {
       "fr": "Villa avec piscine et jardin, Aïn Diab",
       "en": "Villa with pool and garden, Aïn Diab"
@@ -82,8 +97,34 @@ window.HOMY_LISTINGS_BACKUP = [
       "en": "Aïn Diab is Casablanca's seafront: beaches, clubs and waterfront restaurants, backed by a residential fabric of villas on generous plots. International schools, the Anfa golf course and Morocco Mall are within ten minutes, and the area benefits directly from the Corniche regeneration."
     },
     "finishes": {
-      "fr": ["Piscine", "Jardin et terrasse", "Salon marocain traditionnel", "Cheminée", "Sols en marbre", "Climatisation intégrée", "Chauffage central", "Double vitrage", "Cuisine équipée avec four", "Porte blindée", "Résidence sécurisée", "Parabole satellite"],
-      "en": ["Swimming pool", "Garden and terrace", "Traditional Moroccan salon", "Fireplace", "Marble floors", "Integrated air conditioning", "Central heating", "Double glazing", "Fitted kitchen with oven", "Reinforced door", "Secure residence", "Satellite dish"]
+      "fr": [
+        "Piscine",
+        "Jardin et terrasse",
+        "Salon marocain traditionnel",
+        "Cheminée",
+        "Sols en marbre",
+        "Climatisation intégrée",
+        "Chauffage central",
+        "Double vitrage",
+        "Cuisine équipée avec four",
+        "Porte blindée",
+        "Résidence sécurisée",
+        "Parabole satellite"
+      ],
+      "en": [
+        "Swimming pool",
+        "Garden and terrace",
+        "Traditional Moroccan salon",
+        "Fireplace",
+        "Marble floors",
+        "Integrated air conditioning",
+        "Central heating",
+        "Double glazing",
+        "Fitted kitchen with oven",
+        "Reinforced door",
+        "Secure residence",
+        "Satellite dish"
+      ]
     },
     "images": [
       "img/villa-ain-diab-01.jpg",
@@ -95,10 +136,8 @@ window.HOMY_LISTINGS_BACKUP = [
       "img/villa-ain-diab-07.jpg"
     ]
   },
-
   {
     "id": "appartement-racine",
-    "reference": "HOMY-CAS-003",
     "status": "sale",
     "type": "apartment",
     "city": "casablanca",
@@ -112,7 +151,10 @@ window.HOMY_LISTINGS_BACKUP = [
     "floorsTotal": 7,
     "parking": 1,
     "year": 2018,
-    "neighbourhood": { "fr": "Racine", "en": "Racine" },
+    "neighbourhood": {
+      "fr": "Racine",
+      "en": "Racine"
+    },
     "title": {
       "fr": "Appartement lumineux au cœur de Racine",
       "en": "Bright apartment in the heart of Racine"
@@ -126,21 +168,31 @@ window.HOMY_LISTINGS_BACKUP = [
       "en": "Racine is where contemporary Casablanca lives: cafés, galleries, brasseries and independent boutiques along rue Jean Jaurès and boulevard d'Anfa. Highly sought after by expatriate executives, it delivers one of the city's best yield-to-security ratios."
     },
     "finishes": {
-      "fr": ["Parquet chêne massif", "Cuisine équipée Siemens", "Salles de bains en marbre", "Climatisation réversible", "Volets roulants électriques", "Interphone vidéo", "Concierge 24h/24"],
-      "en": ["Solid oak parquet", "Fitted Siemens kitchen", "Marble bathrooms", "Reversible air conditioning", "Electric shutters", "Video entry system", "24-hour concierge"]
+      "fr": [
+        "Parquet chêne massif",
+        "Cuisine équipée Siemens",
+        "Salles de bains en marbre",
+        "Climatisation réversible",
+        "Volets roulants électriques",
+        "Interphone vidéo",
+        "Concierge 24h/24"
+      ],
+      "en": [
+        "Solid oak parquet",
+        "Fitted Siemens kitchen",
+        "Marble bathrooms",
+        "Reversible air conditioning",
+        "Electric shutters",
+        "Video entry system",
+        "24-hour concierge"
+      ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80"
+      "img/placeholder.svg"
     ]
   },
-
   {
     "id": "appartement-bourgogne",
-    "reference": "HOMY-CAS-004",
     "status": "sale",
     "type": "apartment",
     "city": "casablanca",
@@ -154,7 +206,10 @@ window.HOMY_LISTINGS_BACKUP = [
     "floorsTotal": 5,
     "parking": 1,
     "year": 2015,
-    "neighbourhood": { "fr": "Bourgogne", "en": "Bourgogne" },
+    "neighbourhood": {
+      "fr": "Bourgogne",
+      "en": "Bourgogne"
+    },
     "title": {
       "fr": "Deux chambres rénové à deux pas de la Corniche",
       "en": "Renovated two-bedroom moments from the Corniche"
@@ -168,21 +223,29 @@ window.HOMY_LISTINGS_BACKUP = [
       "en": "Bourgogne combines proximity to the ocean with genuine neighbourhood life. Markets, bakeries, clinics and schools are all walkable. The area benefits directly from the Corniche regeneration and shows steady year-round rental demand."
     },
     "finishes": {
-      "fr": ["Rénovation intégrale 2023", "Sol en grès cérame grand format", "Cuisine ouverte équipée", "Placards sur mesure", "Fenêtres double vitrage", "Chauffe-eau thermodynamique"],
-      "en": ["Complete 2023 renovation", "Large-format porcelain flooring", "Fitted open kitchen", "Bespoke wardrobes", "Double-glazed windows", "Heat-pump water heater"]
+      "fr": [
+        "Rénovation intégrale 2023",
+        "Sol en grès cérame grand format",
+        "Cuisine ouverte équipée",
+        "Placards sur mesure",
+        "Fenêtres double vitrage",
+        "Chauffe-eau thermodynamique"
+      ],
+      "en": [
+        "Complete 2023 renovation",
+        "Large-format porcelain flooring",
+        "Fitted open kitchen",
+        "Bespoke wardrobes",
+        "Double-glazed windows",
+        "Heat-pump water heater"
+      ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600607688066-890987f18a86?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80"
+      "img/placeholder.svg"
     ]
   },
-
   {
     "id": "villa-palmeraie-marrakech",
-    "reference": "HOMY-MRK-005",
     "status": "sale",
     "type": "villa",
     "city": "marrakech",
@@ -196,7 +259,10 @@ window.HOMY_LISTINGS_BACKUP = [
     "floorsTotal": 1,
     "parking": 3,
     "year": 2020,
-    "neighbourhood": { "fr": "La Palmeraie", "en": "La Palmeraie" },
+    "neighbourhood": {
+      "fr": "La Palmeraie",
+      "en": "La Palmeraie"
+    },
     "title": {
       "fr": "Villa de plain-pied sur 3 000 m² d'oliviers",
       "en": "Single-storey villa set in 3,000 sqm of olive groves"
@@ -210,21 +276,31 @@ window.HOMY_LISTINGS_BACKUP = [
       "en": "Marrakech's Palmeraie is the historic district of large estates, fifteen minutes from the Medina and ten from Ménara airport. Golf courses, international schools and luxury hospitality are concentrated here. The market is driven by European buyers and the fast growth of premium seasonal rentals."
     },
     "finishes": {
-      "fr": ["Tadelakt et béton ciré artisanaux", "Menuiserie cèdre massif", "Piscine chauffée 18 m", "Puits et forage privé", "Panneaux photovoltaïques", "Jardin d'oliviers centenaires", "Logement de personnel indépendant"],
-      "en": ["Hand-applied tadelakt and polished concrete", "Solid cedar joinery", "18 m heated pool", "Private well and borehole", "Photovoltaic panels", "Century-old olive grove", "Independent staff quarters"]
+      "fr": [
+        "Tadelakt et béton ciré artisanaux",
+        "Menuiserie cèdre massif",
+        "Piscine chauffée 18 m",
+        "Puits et forage privé",
+        "Panneaux photovoltaïques",
+        "Jardin d'oliviers centenaires",
+        "Logement de personnel indépendant"
+      ],
+      "en": [
+        "Hand-applied tadelakt and polished concrete",
+        "Solid cedar joinery",
+        "18 m heated pool",
+        "Private well and borehole",
+        "Photovoltaic panels",
+        "Century-old olive grove",
+        "Independent staff quarters"
+      ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80"
+      "img/placeholder.svg"
     ]
   },
-
   {
     "id": "riad-medina-marrakech",
-    "reference": "HOMY-MRK-006",
     "status": "rent",
     "type": "riad",
     "city": "marrakech",
@@ -238,7 +314,10 @@ window.HOMY_LISTINGS_BACKUP = [
     "floorsTotal": 3,
     "parking": 0,
     "year": 1930,
-    "neighbourhood": { "fr": "Médina", "en": "Medina" },
+    "neighbourhood": {
+      "fr": "Médina",
+      "en": "Medina"
+    },
     "title": {
       "fr": "Riad restauré avec patio et terrasse Atlas",
       "en": "Restored riad with courtyard and Atlas terrace"
@@ -252,21 +331,31 @@ window.HOMY_LISTINGS_BACKUP = [
       "en": "Marrakech's UNESCO-listed Medina remains the most sought-after location for an authentic pied-à-terre. Restored riads are scarce and rental demand, driven by long European winter stays, comfortably outstrips available supply."
     },
     "finishes": {
-      "fr": ["Zellige de Fès posé à la main", "Plafonds en cèdre peint", "Tadelakt traditionnel", "Patio avec bassin et orangers", "Cheminées fonctionnelles", "Terrasse aménagée vue Atlas", "Meublé et décoré"],
-      "en": ["Hand-laid Fez zellige", "Painted cedar ceilings", "Traditional tadelakt", "Courtyard with basin and orange trees", "Working fireplaces", "Furnished Atlas-view terrace", "Fully furnished and styled"]
+      "fr": [
+        "Zellige de Fès posé à la main",
+        "Plafonds en cèdre peint",
+        "Tadelakt traditionnel",
+        "Patio avec bassin et orangers",
+        "Cheminées fonctionnelles",
+        "Terrasse aménagée vue Atlas",
+        "Meublé et décoré"
+      ],
+      "en": [
+        "Hand-laid Fez zellige",
+        "Painted cedar ceilings",
+        "Traditional tadelakt",
+        "Courtyard with basin and orange trees",
+        "Working fireplaces",
+        "Furnished Atlas-view terrace",
+        "Fully furnished and styled"
+      ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1600&q=80"
+      "img/placeholder.svg"
     ]
   },
-
   {
     "id": "appartement-ain-diab",
-    "reference": "HOMY-CAS-007",
     "status": "rent",
     "type": "apartment",
     "city": "casablanca",
@@ -280,7 +369,10 @@ window.HOMY_LISTINGS_BACKUP = [
     "floorsTotal": null,
     "parking": null,
     "year": null,
-    "neighbourhood": { "fr": "Aïn Diab", "en": "Aïn Diab" },
+    "neighbourhood": {
+      "fr": "Aïn Diab",
+      "en": "Aïn Diab"
+    },
     "title": {
       "fr": "Appartement vue mer avec terrasse, Aïn Diab",
       "en": "Sea-view apartment with terrace, Aïn Diab"
@@ -294,8 +386,32 @@ window.HOMY_LISTINGS_BACKUP = [
       "en": "Aïn Diab and the Corniche form Casablanca's seafront: beaches, clubs, hotels and waterfront restaurants. The area, currently being regenerated, attracts international executives and commands the city's highest rents per square metre."
     },
     "finishes": {
-      "fr": ["Vue mer dégagée", "Terrasse", "Sols en marbre", "Boiseries et moulures", "Cuisine équipée séparée", "Chauffage central", "Climatisation", "Double vitrage", "Ascenseur et garage", "Service de gardiennage", "Quartier sécurisé"],
-      "en": ["Clear sea view", "Terrace", "Marble floors", "Panelled joinery and mouldings", "Separate fitted kitchen", "Central heating", "Air conditioning", "Double glazing", "Lift and garage", "Caretaker service", "Secure neighbourhood"]
+      "fr": [
+        "Vue mer dégagée",
+        "Terrasse",
+        "Sols en marbre",
+        "Boiseries et moulures",
+        "Cuisine équipée séparée",
+        "Chauffage central",
+        "Climatisation",
+        "Double vitrage",
+        "Ascenseur et garage",
+        "Service de gardiennage",
+        "Quartier sécurisé"
+      ],
+      "en": [
+        "Clear sea view",
+        "Terrace",
+        "Marble floors",
+        "Panelled joinery and mouldings",
+        "Separate fitted kitchen",
+        "Central heating",
+        "Air conditioning",
+        "Double glazing",
+        "Lift and garage",
+        "Caretaker service",
+        "Secure neighbourhood"
+      ]
     },
     "images": [
       "img/ain-diab-01.jpg",
@@ -305,10 +421,8 @@ window.HOMY_LISTINGS_BACKUP = [
       "img/ain-diab-05.jpg"
     ]
   },
-
   {
     "id": "appartement-racine-location",
-    "reference": "HOMY-CAS-008",
     "status": "rent",
     "type": "apartment",
     "city": "casablanca",
@@ -322,7 +436,10 @@ window.HOMY_LISTINGS_BACKUP = [
     "floorsTotal": 6,
     "parking": 1,
     "year": 2016,
-    "neighbourhood": { "fr": "Racine", "en": "Racine" },
+    "neighbourhood": {
+      "fr": "Racine",
+      "en": "Racine"
+    },
     "title": {
       "fr": "Deux chambres meublé au cœur de Racine",
       "en": "Furnished two-bedroom in central Racine"
@@ -336,15 +453,25 @@ window.HOMY_LISTINGS_BACKUP = [
       "en": "Racine is where contemporary Casablanca lives: cafés, galleries, brasseries and independent boutiques, all walkable. Popular with young professionals and expatriates, it maintains constant rental pressure and near-zero vacancy."
     },
     "finishes": {
-      "fr": ["Meublé et décoré", "Parquet stratifié chêne clair", "Cuisine équipée", "Climatisation dans les chambres", "Ascenseur et gardien", "Charges incluses"],
-      "en": ["Furnished and styled", "Light oak laminate flooring", "Fitted kitchen", "Air conditioning in bedrooms", "Lift and caretaker", "Charges included"]
+      "fr": [
+        "Meublé et décoré",
+        "Parquet stratifié chêne clair",
+        "Cuisine équipée",
+        "Climatisation dans les chambres",
+        "Ascenseur et gardien",
+        "Charges incluses"
+      ],
+      "en": [
+        "Furnished and styled",
+        "Light oak laminate flooring",
+        "Fitted kitchen",
+        "Air conditioning in bedrooms",
+        "Lift and caretaker",
+        "Charges included"
+      ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80"
+      "img/placeholder.svg"
     ]
   }
 ];

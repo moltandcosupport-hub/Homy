@@ -87,8 +87,8 @@ window.HOMY_TEXT = {
   "home.featured.eyebrow": { fr: "Sélection", en: "Selection" },
   "home.featured.title":   { fr: "Nos biens du moment", en: "Currently on the market" },
   "home.featured.text": {
-    fr: "Six propriétés choisies pour leur emplacement, leur qualité de construction et leur potentiel de valorisation.",
-    en: "Six properties chosen for their location, build quality and growth potential."
+    fr: "Une sélection de biens choisis pour leur emplacement, leur qualité de construction et leur potentiel de valorisation.",
+    en: "A selection of properties chosen for their location, build quality and growth potential."
   },
 
   /* ----------------------------------------------------------- HOME: WHY */

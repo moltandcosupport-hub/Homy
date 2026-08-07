@@ -68,7 +68,8 @@
             ' alt="' + H.escapeHtml(title) + '" loading="lazy" decoding="async">' +
         '</div>' +
         '<div class="card__body">' +
-          '<p class="card__meta">' + H.t("type." + p.type) + ' · ' + H.escapeHtml(p.reference) + '</p>' +
+          '<p class="card__meta">' + H.t("type." + p.type) +
+            (p.reference ? ' · ' + H.escapeHtml(p.reference) : "") + '</p>' +
           '<h3 class="card__title">' + H.escapeHtml(title) + '</h3>' +
           '<p class="card__place">' + H.escapeHtml(H.placeLabel(p)) + '</p>' +
           '<p class="card__price">' + price.amount + ' <span>' + price.suffix + '</span></p>' +
@@ -184,9 +185,18 @@
     var featured = $("#featuredGrid");
     showSkeletons(featured, 6);
 
+    /* A property with its own photographs leads. The ones still waiting on
+       photography fall to the back rather than heading the page.          */
+    function hasOwnPhotos(p) {
+      return !!(p.images && p.images[0] && p.images[0].indexOf("img/placeholder") !== 0);
+    }
+
     DATA.load().then(function (list) {
-      var picks = list.filter(function (p) { return p.featured; }).slice(0, 6);
-      if (picks.length < 6) picks = picks.concat(list.filter(function (p) { return !p.featured; })).slice(0, 6);
+      var picks = list.filter(function (p) { return p.featured; });
+      if (picks.length < 6) picks = picks.concat(list.filter(function (p) { return !p.featured; }));
+      picks = picks
+        .sort(function (a, b) { return (hasOwnPhotos(b) ? 1 : 0) - (hasOwnPhotos(a) ? 1 : 0); })
+        .slice(0, 6);
       renderCards(featured, picks);
 
       document.addEventListener("homy:langchange", function () {
@@ -465,7 +475,8 @@
     function renderDetails(p) {
       var price = H.formatPrice(p);
 
-      $("#propRef").textContent = H.t("common.reference") + " " + p.reference + " · " +
+      $("#propRef").textContent =
+        (p.reference ? H.t("common.reference") + " " + p.reference + " · " : "") +
         H.t(p.status === "rent" ? "common.forRent" : "common.forSale");
       $("#propTitle").textContent = H.propertyTitle(p);
       $("#propPlace").textContent = H.placeLabel(p);
@@ -504,7 +515,8 @@
         return "<li>" + H.escapeHtml(f) + "</li>";
       }).join("");
 
-      var message = H.t("property.whatsappMessage") + " " + p.reference + " — " + H.propertyTitle(p) + ".";
+      var message = H.t("property.whatsappMessage") + " " +
+        (p.reference ? p.reference + " — " : "") + H.propertyTitle(p) + ".";
       $("#propWhatsapp").href = H.whatsappLink(message);
 
       var phone = H.config.phonePrimary || "";
