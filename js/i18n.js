@@ -132,31 +132,6 @@ window.HOMY_TEXT = {
   },
   "founder.cta": { fr: "Découvrir notre histoire", en: "Read our story" },
 
-  /* -------------------------------------------------- HOME: TESTIMONIALS */
-  "testimonials.eyebrow": { fr: "Témoignages", en: "Testimonials" },
-  "testimonials.title":   { fr: "Ce que disent nos clients", en: "What our clients say" },
-
-  "testimonial.1.text": {
-    fr: "« Nous cherchions depuis dix-huit mois. HOMY nous a présenté quatre biens, dont celui que nous avons acheté. C'est la première agence qui a écouté avant de proposer. »",
-    en: "“We had been searching for eighteen months. HOMY showed us four properties, one of which we bought. It is the first agency that listened before proposing.”"
-  },
-  "testimonial.1.author": { fr: "Karim & Leïla T.", en: "Karim & Leïla T." },
-  "testimonial.1.meta":   { fr: "Achat d'un penthouse, Triangle d'Or", en: "Penthouse purchase, Triangle d'Or" },
-
-  "testimonial.2.text": {
-    fr: "« Je vis à Paris et j'ai acheté à Marrakech sans me déplacer plus d'une fois. Tout a été préparé, vérifié et expliqué en amont. Un travail remarquable. »",
-    en: "“I live in Paris and bought in Marrakech travelling out only once. Everything was prepared, verified and explained in advance. Remarkable work.”"
-  },
-  "testimonial.2.author": { fr: "Sophie M.", en: "Sophie M." },
-  "testimonial.2.meta":   { fr: "Acquisition d'une villa, La Palmeraie", en: "Villa acquisition, La Palmeraie" },
-
-  "testimonial.3.text": {
-    fr: "« Mon appartement était en vente depuis un an avec une autre agence. HOMY l'a repris, refait les photos, revu le prix, et l'a vendu en sept semaines. »",
-    en: "“My apartment had been on the market for a year with another agency. HOMY took it on, reshot the photography, revised the price, and sold it in seven weeks.”"
-  },
-  "testimonial.3.author": { fr: "Abdelilah R.", en: "Abdelilah R." },
-  "testimonial.3.meta":   { fr: "Vente d'un appartement, Racine", en: "Apartment sale, Racine" },
-
   /* ------------------------------------------------------------ HOME CTA */
   "cta.eyebrow": { fr: "Parlons-en", en: "Let's talk" },
   "cta.title":   { fr: "Un projet, une question, une estimation ?", en: "A project, a question, a valuation?" },

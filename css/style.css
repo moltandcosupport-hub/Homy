@@ -14,17 +14,16 @@
      09. Property cards
      10. Why HOMY / feature grids
      11. Founder
-     12. Testimonials
-     13. Call-to-action band
-     14. Footer
-     15. Floating WhatsApp button
-     16. Interior page headers
-     17. Filters (properties page)
-     18. Single property page
-     19. About page
-     20. Invest page
-     21. Contact page
-     22. Reveal animations
+     12. Call-to-action band
+     13. Footer
+     14. Floating WhatsApp button
+     15. Interior page headers
+     16. Filters (properties page)
+     17. Single property page
+     18. About page
+     19. Invest page
+     20. Contact page
+     21. Reveal animations
    ========================================================================= */
 
 
@@ -812,49 +811,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   12. TESTIMONIALS
-   ========================================================================= */
-.quote {
-  background: var(--white);
-  padding: 36px 30px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border-top: 2px solid var(--gold);
-  box-shadow: var(--shadow-sm);
-}
-.quote__mark {
-  font-family: var(--font-serif);
-  font-size: 3.4rem;
-  line-height: 0.6;
-  color: var(--gold);
-  opacity: 0.5;
-  margin-bottom: 20px;
-}
-.quote__text {
-  font-family: var(--font-serif);
-  font-size: 1.16rem;
-  line-height: 1.6;
-  color: var(--navy);
-  margin-bottom: 26px;
-}
-.quote__author {
-  margin-top: auto;
-  font-size: 0.82rem;
-  letter-spacing: 0.1em;
-  color: var(--navy);
-}
-.quote__meta {
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-top: 5px;
-}
-
-
-/* =========================================================================
-   13. CALL-TO-ACTION BAND
+   12. CALL-TO-ACTION BAND
    ========================================================================= */
 .cta-band {
   position: relative;
@@ -875,7 +832,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   14. FOOTER
+   13. FOOTER
    ========================================================================= */
 .site-footer {
   background: var(--navy-deep);
@@ -933,7 +890,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   15. FLOATING WHATSAPP BUTTON
+   14. FLOATING WHATSAPP BUTTON
    ========================================================================= */
 .wa-float {
   position: fixed;
@@ -970,7 +927,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   16. INTERIOR PAGE HEADERS
+   15. INTERIOR PAGE HEADERS
    ========================================================================= */
 .page-hero {
   position: relative;
@@ -1008,7 +965,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   17. FILTERS (PROPERTIES PAGE)
+   16. FILTERS (PROPERTIES PAGE)
    ========================================================================= */
 .filters {
   background: var(--cream);
@@ -1064,7 +1021,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   18. SINGLE PROPERTY PAGE
+   17. SINGLE PROPERTY PAGE
    ========================================================================= */
 .gallery { position: relative; background: var(--navy-deep); }
 .gallery__stage {
@@ -1241,7 +1198,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   19. ABOUT PAGE
+   18. ABOUT PAGE
    ========================================================================= */
 .split { display: grid; gap: 40px; align-items: center; }
 @media (min-width: 900px) { .split { grid-template-columns: 1fr 1fr; gap: 70px; } }
@@ -1265,7 +1222,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   20. INVEST PAGE
+   19. INVEST PAGE
    ========================================================================= */
 .figure-grid {
   display: grid;
@@ -1349,7 +1306,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   21. CONTACT PAGE
+   20. CONTACT PAGE
    ========================================================================= */
 .contact-layout { display: grid; gap: 50px; align-items: start; }
 @media (min-width: 1000px) { .contact-layout { grid-template-columns: 1.25fr 1fr; gap: 80px; } }
@@ -1407,7 +1364,7 @@ p:last-child { margin-bottom: 0; }
 
 
 /* =========================================================================
-   22. REVEAL ANIMATIONS
+   21. REVEAL ANIMATIONS
    ========================================================================= */
 [data-reveal] {
   opacity: 0;
