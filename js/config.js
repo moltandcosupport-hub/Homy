@@ -23,10 +23,9 @@ window.HOMY_CONFIG = {
   /* --- Email -------------------------------------------------------------- */
   email: "contact@homy.ma",
 
-  /* --- Office address -----------------------------------------------------
-     Add your exact street and number to addressLine1 when you have it.   */
-  addressLine1: "Triangle d'Or",
-  addressLine2: "20250 Casablanca",
+  /* --- Office address ----------------------------------------------------- */
+  addressLine1: "12, rue Ain El Ati",
+  addressLine2: "Triangle d'Or, Casablanca",
   addressCountry: "Maroc",
 
   /* --- Opening hours ------------------------------------------------------ */
@@ -36,12 +35,12 @@ window.HOMY_CONFIG = {
   /* --- Map ----------------------------------------------------------------
      To change the map: open Google Maps, find your address, and replace the
      text after "q=" below with your address (spaces become +)            */
-  mapQuery: "Triangle+d'Or,+Casablanca,+Maroc",
+  mapQuery: "12+rue+Ain+El+Ati,+Triangle+d'Or,+Casablanca,+Maroc",
 
   /* --- Social networks (leave "" empty to hide the icon) ------------------ */
-  instagram: "https://instagram.com/",
-  facebook:  "https://facebook.com/",
-  linkedin:  "https://linkedin.com/",
+  instagram: "https://instagram.com/homypremiumrealestate.ma",
+  facebook:  "",
+  linkedin:  "",
 
   /* --- Agency ------------------------------------------------------------- */
   foundedYear: 2019

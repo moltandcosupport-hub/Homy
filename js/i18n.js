@@ -64,8 +64,8 @@ window.HOMY_TEXT = {
   "home.hero.eyebrow": { fr: "Casablanca · Marrakech", en: "Casablanca · Marrakech" },
   "home.hero.title":   { fr: "L'immobilier d'exception au Maroc", en: "Exceptional property in Morocco" },
   "home.hero.subtitle": {
-    fr: "Une sélection confidentielle d'appartements et de villas, accompagnée par une équipe qui connaît chaque rue de vos quartiers.",
-    en: "A confidential selection of apartments and villas, guided by a team that knows every street of your neighbourhoods."
+    fr: "Votre référence pour la vente et la location d'appartements haut de gamme. Des adresses recherchées, des prestations d'exception, et une équipe qui vous accompagne à chaque étape.",
+    en: "Your reference for the sale and rental of high-end apartments. Sought-after addresses, exceptional finishes, and a team that guides you at every step."
   },
   "home.hero.scroll":  { fr: "Découvrir", en: "Explore" },
 
@@ -93,26 +93,26 @@ window.HOMY_TEXT = {
 
   /* ----------------------------------------------------------- HOME: WHY */
   "home.why.eyebrow": { fr: "Pourquoi HOMY", en: "Why HOMY" },
-  "home.why.title":   { fr: "Une autre façon de vendre l'immobilier", en: "A different way of selling property" },
-  "home.why.1.title": { fr: "Sélection confidentielle", en: "Confidential selection" },
+  "home.why.title":   { fr: "Pourquoi choisir HOMY", en: "Why choose HOMY" },
+  "home.why.1.title": { fr: "Expertise", en: "Expertise" },
   "home.why.1.text": {
-    fr: "Nous refusons plus de biens que nous n'en acceptons. Chaque propriété est visitée, vérifiée et documentée avant d'être présentée.",
-    en: "We turn down more properties than we take on. Every home is visited, verified and documented before it is ever presented."
+    fr: "Une connaissance approfondie du marché de l'immobilier de luxe : ce que vaut une adresse, ce qui fait la différence entre deux immeubles voisins, et ce qui se négocie réellement.",
+    en: "In-depth knowledge of the luxury property market: what an address is worth, what separates two neighbouring buildings, and what genuinely can be negotiated."
   },
-  "home.why.2.title": { fr: "Connaissance du terrain", en: "Ground knowledge" },
+  "home.why.2.title": { fr: "Un réseau étendu", en: "An extensive network" },
   "home.why.2.text": {
-    fr: "Rue par rue, immeuble par immeuble. Nous vous disons ce qu'un quartier vaut aujourd'hui et ce qu'il vaudra dans cinq ans.",
-    en: "Street by street, building by building. We tell you what a district is worth today and what it will be worth in five years."
+    fr: "L'accès à un portefeuille diversifié d'appartements haut de gamme, dont une partie ne sera jamais publiée en ligne.",
+    en: "Access to a diverse portfolio of high-end apartments, part of which is never published online."
   },
-  "home.why.3.title": { fr: "Un seul interlocuteur", en: "One single contact" },
+  "home.why.3.title": { fr: "Un accompagnement sur mesure", en: "Tailored support" },
   "home.why.3.text": {
-    fr: "De la première visite à la signature chez le notaire, la même personne vous suit. Pas de dossier qui change de mains.",
-    en: "From the first viewing to signing at the notary, the same person handles your file. It never changes hands."
+    fr: "Une équipe attentive qui prend le temps de comprendre vos besoins avant de vous proposer quoi que ce soit, à l'achat comme à la location.",
+    en: "An attentive team that takes the time to understand what you need before proposing anything, whether you are buying or renting."
   },
-  "home.why.4.title": { fr: "Discrétion absolue", en: "Absolute discretion" },
+  "home.why.4.title": { fr: "Engagement", en: "Commitment" },
   "home.why.4.text": {
-    fr: "Une partie de nos mandats ne sera jamais publiée. Vos informations et vos intentions restent strictement privées.",
-    en: "A portion of our mandates is never published. Your information and your intentions remain strictly private."
+    fr: "Un service fondé sur la confiance et la transparence, du premier échange jusqu'à la remise des clés.",
+    en: "A service built on trust and transparency, from the first conversation to the handover of the keys."
   },
 
   /* ------------------------------------------------------- HOME: FOUNDER */
@@ -215,23 +215,23 @@ window.HOMY_TEXT = {
   "about.hero.eyebrow": { fr: "À propos", en: "About" },
   "about.hero.title":   { fr: "Depuis 2019, une maison à la fois", en: "Since 2019, one home at a time" },
   "about.hero.text": {
-    fr: "HOMY est née d'un constat simple : au Maroc, les plus belles propriétés étaient vendues comme les autres.",
-    en: "HOMY was born from a simple observation: in Morocco, the finest properties were being sold like any other."
+    fr: "Votre référence pour la vente et la location d'appartements haut de gamme, avec une expérience immobilière pensée pour vos besoins et vos aspirations.",
+    en: "Your reference for the sale and rental of high-end apartments, with a real estate experience shaped around your needs and your aspirations."
   },
 
   "about.story.eyebrow": { fr: "L'histoire", en: "The story" },
-  "about.story.title":   { fr: "Une agence construite lentement", en: "An agency built slowly" },
+  "about.story.title":   { fr: "Une sélection, pas un catalogue", en: "A selection, not a catalogue" },
   "about.story.p1": {
-    fr: "HOMY est fondée en octobre 2019 par Rita Elliaoui, avec un bureau dans le Triangle d'Or à Casablanca et une règle qui n'a pas changé depuis : ne présenter que des biens que nous recommanderions à notre propre famille.",
-    en: "HOMY was founded in October 2019 by Rita Elliaoui, with an office in the Triangle d'Or in Casablanca and one rule that has not changed since: only present properties we would recommend to our own family."
+    fr: "HOMY est fondée en octobre 2019 par Rita Elliaoui, avec un bureau rue Ain El Ati, dans le Triangle d'Or à Casablanca. L'engagement est le même depuis le premier jour : offrir une expérience immobilière unique, adaptée à vos besoins et à vos aspirations.",
+    en: "HOMY was founded in October 2019 by Rita Elliaoui, from an office on rue Ain El Ati in the Triangle d'Or, Casablanca. The commitment has been the same since day one: to offer a real estate experience shaped around your needs and your aspirations."
   },
   "about.story.p2": {
-    fr: "L'agence s'est ensuite étendue à Marrakech, pour accompagner une clientèle européenne de plus en plus présente sur les villas de la Palmeraie et les riads de la Médina — deux marchés qui ne se traitent pas comme celui de Casablanca.",
-    en: "The agency later extended to Marrakech, to serve a European clientele increasingly focused on Palmeraie villas and Medina riads — two markets that cannot be handled like Casablanca."
+    fr: "Chaque appartement de notre sélection est choisi pour sa qualité, ses finitions haut de gamme et son emplacement. Nous en refusons plus que nous n'en acceptons, parce qu'un portefeuille court et vérifié vaut mieux qu'un catalogue.",
+    en: "Every apartment in our selection is chosen for its quality, its high-end finishes and its location. We turn down more than we take on, because a short, verified portfolio is worth more than a catalogue."
   },
   "about.story.p3": {
-    fr: "Aujourd'hui, HOMY couvre la vente, la location et le conseil en investissement sur les deux villes, en français, en anglais et en arabe, avec le même interlocuteur du premier appel jusqu'à la signature chez le notaire.",
-    en: "Today HOMY covers sales, lettings and investment advice across both cities, in French, English and Arabic, with the same point of contact from the first call to signing at the notary."
+    fr: "À l'achat comme à la location, notre équipe vous accompagne à chaque étape et vous conseille pour optimiser votre investissement. Le même interlocuteur, du premier échange jusqu'à la remise des clés.",
+    en: "Whether you are buying or renting, our team guides you through every step and advises you on how to make the most of your investment. The same point of contact, from the first conversation to the handover of the keys."
   },
 
   "about.method.eyebrow": { fr: "La méthode", en: "The method" },
@@ -245,16 +245,16 @@ window.HOMY_TEXT = {
   "about.method.4.title": { fr: "Accompagner jusqu'au bout", en: "See it through" },
   "about.method.4.text":  { fr: "Négociation, notaire, financement, remise des clés. Le même interlocuteur du premier appel à la signature, sans dossier qui change de mains.", en: "Negotiation, notary, financing, handover. The same contact from the first call to signature, with no file changing hands." },
 
-  "about.values.eyebrow": { fr: "Nos engagements", en: "Our commitments" },
-  "about.values.title":   { fr: "Ce sur quoi nous ne transigeons pas", en: "Where we do not compromise" },
-  "about.values.1.title": { fr: "Vérification systématique", en: "Systematic verification" },
-  "about.values.1.text":  { fr: "Titre foncier, autorisations, charges, servitudes. Tout est contrôlé avant la mise en marché.", en: "Land title, permits, charges, easements. Everything is checked before a property goes to market." },
-  "about.values.2.title": { fr: "Estimation honnête", en: "Honest valuation" },
-  "about.values.2.text":  { fr: "Nous refusons les mandats surévalués. Un bien au bon prix se vend, un bien trop cher s'abîme.", en: "We decline over-priced mandates. A correctly priced home sells; an over-priced one wears out." },
-  "about.values.3.title": { fr: "Photographie professionnelle", en: "Professional photography" },
-  "about.values.3.text":  { fr: "Chaque bien est photographié par un professionnel, à nos frais, sans exception.", en: "Every property is photographed by a professional, at our expense, without exception." },
-  "about.values.4.title": { fr: "Trois langues", en: "Three languages" },
-  "about.values.4.text":  { fr: "Français, anglais, arabe. Nos clients sont marocains, européens et du Golfe.", en: "French, English, Arabic. Our clients are Moroccan, European and from the Gulf." },
+  "about.values.eyebrow": { fr: "La sélection", en: "The selection" },
+  "about.values.title":   { fr: "Ce qui distingue nos appartements", en: "What sets our apartments apart" },
+  "about.values.1.title": { fr: "Emplacements recherchés", en: "Prime locations" },
+  "about.values.1.text":  { fr: "Nos appartements se situent dans les quartiers les plus demandés, avec de belles vues et un accès immédiat aux commerces, aux écoles et aux transports.", en: "Our apartments sit in the most sought-after neighbourhoods, with fine views and immediate access to shops, schools and transport." },
+  "about.values.2.title": { fr: "Prestations haut de gamme", en: "High-end finishes" },
+  "about.values.2.text":  { fr: "Des finitions de qualité supérieure et des matériaux nobles : marbre, bois précieux, équipements contemporains.", en: "Superior finishes and noble materials: marble, precious woods, contemporary appliances." },
+  "about.values.3.title": { fr: "Volumes et lumière", en: "Volume and light" },
+  "about.values.3.text":  { fr: "De grands volumes et une luminosité exceptionnelle, pour un cadre de vie agréable et accueillant.", en: "Generous volumes and exceptional natural light, for a living space that feels welcoming." },
+  "about.values.4.title": { fr: "Design contemporain", en: "Contemporary design" },
+  "about.values.4.text":  { fr: "Des appartements raffinés qui allient design moderne et confort, choisis un par un plutôt que référencés en masse.", en: "Refined apartments combining modern design with comfort, chosen one at a time rather than listed in bulk." },
 
   /* -------------------------------------------------------- PAGE: INVEST */
   "invest.hero.eyebrow": { fr: "Guide", en: "Guide" },
@@ -453,8 +453,8 @@ window.HOMY_TEXT = {
 
   /* ---------------------------------------------------------------- FOOTER */
   "footer.about": {
-    fr: "Agence immobilière haut de gamme à Casablanca et Marrakech. Vente, location et conseil en investissement depuis 2019.",
-    en: "Premium real estate agency in Casablanca and Marrakech. Sales, lettings and investment advice since 2019."
+    fr: "Vente et location d'appartements haut de gamme à Casablanca et Marrakech. Une expérience immobilière sur mesure depuis octobre 2019.",
+    en: "Sale and rental of high-end apartments in Casablanca and Marrakech. A tailored real estate experience since October 2019."
   },
   "footer.navigate":  { fr: "Navigation", en: "Navigate" },
   "footer.contact":   { fr: "Contact", en: "Contact" },
