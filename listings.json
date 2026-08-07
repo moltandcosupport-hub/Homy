@@ -44,42 +44,44 @@
   {
     "id": "villa-ain-diab",
     "reference": "HOMY-CAS-002",
-    "status": "sale",
+    "status": "rent",
     "type": "villa",
     "city": "casablanca",
     "featured": true,
-    "price": 17000000,
-    "surface": 620,
-    "land": 1450,
-    "rooms": 6,
+    "price": 50000,
+    "surface": 450,
+    "land": null,
+    "rooms": 4,
     "bathrooms": 5,
-    "floor": 0,
-    "floorsTotal": 2,
-    "parking": 4,
-    "year": 2019,
+    "floor": null,
+    "floorsTotal": null,
+    "parking": null,
+    "year": null,
     "neighbourhood": { "fr": "Aïn Diab", "en": "Aïn Diab" },
     "title": {
-      "fr": "Villa contemporaine avec piscine, à cinq minutes de l'océan",
-      "en": "Contemporary villa with pool, five minutes from the ocean"
+      "fr": "Villa avec piscine et jardin, Aïn Diab",
+      "en": "Villa with pool and garden, Aïn Diab"
     },
     "description": {
-      "fr": "Signée par un architecte casablancais reconnu, cette villa de 620 m² habitables s'inscrit sur un terrain paysager de 1 450 m². Le rez-de-chaussée articule un double séjour, une salle à manger de réception, une cuisine professionnelle et une suite d'amis. À l'étage, quatre chambres en suite dont une master de 70 m² avec terrasse privative. Piscine à débordement chauffée, pool house, hammam, salle de sport et logement de gardien indépendant.",
-      "en": "Designed by a leading Casablanca architect, this 620 sqm villa sits within 1,450 sqm of landscaped grounds. The ground floor unfolds as a double reception room, formal dining room, professional kitchen and guest suite. Upstairs, four en-suite bedrooms including a 70 sqm master with private terrace. Heated infinity pool, pool house, hammam, gym and independent caretaker's quarters."
+      "fr": "Villa de 450 m² à louer à Aïn Diab, construite il y a moins de dix ans. Les pièces de réception, aux sols de marbre, s'ouvrent de plain-pied sur le jardin et la piscine par de larges baies coulissantes. Un salon marocain traditionnel et une cheminée complètent les espaces de vie. Quatre chambres et cinq salles de bains, dont une habillée de pierre naturelle avec baignoire et douche à l'italienne. Cuisine équipée avec four et plan de travail en granit. Climatisation intégrée, chauffage central et double vitrage. Résidence sécurisée et porte blindée.",
+      "en": "A 450 sqm villa to rent in Aïn Diab, built within the last ten years. The marble-floored reception rooms open directly onto the garden and pool through wide sliding windows. A traditional Moroccan salon and a fireplace complete the living spaces. Four bedrooms and five bathrooms, one finished in natural stone with both a bath and a walk-in shower. Fitted kitchen with oven and granite worktop. Integrated air conditioning, central heating and double glazing. Secure residence with reinforced door."
     },
     "neighbourhoodDescription": {
       "fr": "Aïn Diab est la façade balnéaire de Casablanca : plages, clubs et restaurants en front de mer, avec en retrait un tissu résidentiel de villas sur de grandes parcelles. Écoles internationales, golf d'Anfa et Morocco Mall sont accessibles en moins de dix minutes, et le secteur bénéficie directement de la requalification de la Corniche.",
       "en": "Aïn Diab is Casablanca's seafront: beaches, clubs and waterfront restaurants, backed by a residential fabric of villas on generous plots. International schools, the Anfa golf course and Morocco Mall are within ten minutes, and the area benefits directly from the Corniche regeneration."
     },
     "finishes": {
-      "fr": ["Structure béton avec isolation renforcée", "Double vitrage Technal", "Cuisine Boffi", "Piscine à débordement chauffée 14 m", "Hammam traditionnel en tadelakt", "Panneaux solaires thermiques", "Système de sécurité et vidéosurveillance"],
-      "en": ["Reinforced concrete structure with enhanced insulation", "Technal double glazing", "Boffi kitchen", "14 m heated infinity pool", "Traditional tadelakt hammam", "Solar thermal panels", "Security and CCTV system"]
+      "fr": ["Piscine", "Jardin et terrasse", "Salon marocain traditionnel", "Cheminée", "Sols en marbre", "Climatisation intégrée", "Chauffage central", "Double vitrage", "Cuisine équipée avec four", "Porte blindée", "Résidence sécurisée", "Parabole satellite"],
+      "en": ["Swimming pool", "Garden and terrace", "Traditional Moroccan salon", "Fireplace", "Marble floors", "Integrated air conditioning", "Central heating", "Double glazing", "Fitted kitchen with oven", "Reinforced door", "Secure residence", "Satellite dish"]
     },
     "images": [
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80"
+      "img/villa-ain-diab-01.jpg",
+      "img/villa-ain-diab-02.jpg",
+      "img/villa-ain-diab-03.jpg",
+      "img/villa-ain-diab-04.jpg",
+      "img/villa-ain-diab-05.jpg",
+      "img/villa-ain-diab-06.jpg",
+      "img/villa-ain-diab-07.jpg"
     ]
   },
 
