@@ -269,31 +269,31 @@ window.HOMY_LISTINGS_BACKUP = [
     "type": "apartment",
     "city": "casablanca",
     "featured": true,
-    "price": 16000,
-    "surface": 165,
-    "terrace": 25,
-    "rooms": 3,
-    "bathrooms": 2,
-    "floor": 6,
-    "floorsTotal": 8,
-    "parking": 2,
-    "year": 2022,
+    "price": 17000,
+    "surface": 160,
+    "terrace": null,
+    "rooms": 2,
+    "bathrooms": 3,
+    "floor": null,
+    "floorsTotal": null,
+    "parking": null,
+    "year": null,
     "neighbourhood": { "fr": "Aïn Diab", "en": "Aïn Diab" },
     "title": {
-      "fr": "Appartement vue mer face à la Corniche",
-      "en": "Sea-view apartment facing the Corniche"
+      "fr": "Appartement vue mer avec terrasse, Aïn Diab",
+      "en": "Sea-view apartment with terrace, Aïn Diab"
     },
     "description": {
-      "fr": "Au sixième étage d'une résidence livrée en 2022, appartement meublé de 165 m² avec vue frontale sur l'Atlantique. Séjour de 50 m² ouvert sur une terrasse de 25 m², cuisine équipée, trois chambres dont une suite. Résidence sécurisée avec piscine, salle de sport et gardiennage permanent. Deux places de parking. Disponible immédiatement, bail d'un an minimum.",
-      "en": "On the sixth floor of a 2022 residence, a furnished 165 sqm apartment with full-frontal Atlantic views. A 50 sqm living room opens onto a 25 sqm terrace, fitted kitchen, three bedrooms including a master suite. Secure residence with pool, gym and permanent security. Two parking spaces. Available immediately, minimum one-year lease."
+      "fr": "Appartement de 160 m² à louer à Aïn Diab, en bon état et disponible immédiatement. Trois espaces de réception s'enchaînent autour d'une salle à manger habillée de boiseries et de sols en marbre, prolongés par une terrasse et une vue mer dégagée. Deux chambres, dont une suite parentale avec parquet et larges baies vitrées, et trois salles d'eau. Cuisine équipée séparée. Chauffage central, climatisation et double vitrage assurant un calme absolu. Ascenseur, garage et service de gardiennage dans une résidence sécurisée.",
+      "en": "A 160 sqm apartment to rent in Aïn Diab, in good condition and available immediately. Three reception areas flow around a dining room finished in panelled joinery and marble floors, opening onto a terrace with clear sea views. Two bedrooms, including a master suite with wood flooring and wide picture windows, and three bathrooms. Separate fitted kitchen. Central heating, air conditioning and double glazing for complete quiet. Lift, garage and caretaker service in a secure residence."
     },
     "neighbourhoodDescription": {
       "fr": "Aïn Diab et la Corniche forment la façade balnéaire de Casablanca : plages, clubs, hôtels et restaurants en front de mer. Le secteur, en pleine requalification, attire les cadres internationaux et affiche les loyers les plus élevés de la ville au mètre carré.",
       "en": "Aïn Diab and the Corniche form Casablanca's seafront: beaches, clubs, hotels and waterfront restaurants. The area, currently being regenerated, attracts international executives and commands the city's highest rents per square metre."
     },
     "finishes": {
-      "fr": ["Livré meublé et équipé", "Vue mer frontale", "Climatisation gainable", "Cuisine équipée électroménager allemand", "Piscine et salle de sport de résidence", "Gardiennage 24h/24", "Deux places de parking"],
-      "en": ["Delivered furnished and equipped", "Full frontal sea view", "Ducted air conditioning", "Kitchen with German appliances", "Residence pool and gym", "24-hour security", "Two parking spaces"]
+      "fr": ["Vue mer dégagée", "Terrasse", "Sols en marbre", "Boiseries et moulures", "Cuisine équipée séparée", "Chauffage central", "Climatisation", "Double vitrage", "Ascenseur et garage", "Service de gardiennage", "Quartier sécurisé"],
+      "en": ["Clear sea view", "Terrace", "Marble floors", "Panelled joinery and mouldings", "Separate fitted kitchen", "Central heating", "Air conditioning", "Double glazing", "Lift and garage", "Caretaker service", "Secure neighbourhood"]
     },
     "images": [
       "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",

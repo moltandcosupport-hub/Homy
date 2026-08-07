@@ -467,10 +467,17 @@
       ];
       if (p.land)    specs.push({ value: p.land + " " + H.t("unit.sqm"), label: H.t("spec.land") });
       if (p.terrace) specs.push({ value: p.terrace + " " + H.t("unit.sqm"), label: H.t("spec.terrace") });
-      specs.push({
-        value: p.floor ? p.floor + " / " + p.floorsTotal : H.t("spec.groundFloor"),
-        label: H.t("spec.floor")
-      });
+
+      /* Only show the floor when we actually know it. Leaving "floor" out of
+         listings.json hides the box rather than guessing "ground floor".   */
+      if (p.floor !== null && p.floor !== undefined) {
+        specs.push({
+          value: p.floor
+            ? (p.floorsTotal ? p.floor + " / " + p.floorsTotal : p.floor)
+            : H.t("spec.groundFloor"),
+          label: H.t("spec.floor")
+        });
+      }
       if (p.parking) specs.push({ value: p.parking, label: H.t("spec.parking") });
       if (p.year)    specs.push({ value: p.year, label: H.t("spec.year") });
 
