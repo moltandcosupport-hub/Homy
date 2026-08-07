@@ -18,15 +18,26 @@
   function $(sel, root) { return (root || document).querySelector(sel); }
   function $$(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
 
-  /* Ask the image host for a smaller file on small screens. */
+  /* Some photo hosts can hand back a smaller copy if we put a width in the
+     address. Your own photos in the img folder cannot, so for those we ask
+     for the file as it is — promising the browser sizes that do not exist
+     makes it pick the wrong one.                                          */
+  function isResizable(url) {
+    return /[?&]w=\d+/.test(url || "");
+  }
+
   function sized(url, width) {
     if (!url) return "";
-    return url.replace(/([?&]w=)\d+/, "$1" + width);
+    return isResizable(url) ? url.replace(/([?&]w=)\d+/, "$1" + width) : url;
   }
-  function srcset(url) {
-    return [600, 900, 1400, 1900].map(function (w) {
+
+  /* Returns the srcset and sizes attributes, or nothing at all. */
+  function responsiveAttrs(url, sizes) {
+    if (!isResizable(url)) return "";
+    var set = [600, 900, 1400, 1900].map(function (w) {
       return sized(url, w) + " " + w + "w";
     }).join(", ");
+    return ' srcset="' + set + '" sizes="' + sizes + '"';
   }
 
   function params() {
@@ -52,9 +63,9 @@
         ' data-reveal data-reveal-delay="' + ((index % 3) + 1) + '">' +
         '<div class="card__media">' +
           '<span class="' + badgeClass + '">' + badgeText + '</span>' +
-          '<img src="' + sized(cover, 900) + '" srcset="' + srcset(cover) + '"' +
-            ' sizes="(min-width: 1060px) 33vw, (min-width: 700px) 50vw, 92vw"' +
-            ' alt="' + H.escapeHtml(title) + '" loading="lazy" decoding="async" width="900" height="675">' +
+          '<img src="' + sized(cover, 900) + '"' +
+            responsiveAttrs(cover, "(min-width: 1060px) 33vw, (min-width: 700px) 50vw, 92vw") +
+            ' alt="' + H.escapeHtml(title) + '" loading="lazy" decoding="async">' +
         '</div>' +
         '<div class="card__body">' +
           '<p class="card__meta">' + H.t("type." + p.type) + ' · ' + H.escapeHtml(p.reference) + '</p>' +
@@ -403,8 +414,9 @@
       var index = 0;
 
       stage.innerHTML = images.map(function (src, i) {
-        return '<img src="' + sized(src, i === 0 ? 1900 : 1400) + '" srcset="' + srcset(src) + '"' +
-               ' sizes="100vw" alt="' + H.escapeHtml(H.propertyTitle(p)) + ' — ' + (i + 1) + '"' +
+        return '<img src="' + sized(src, i === 0 ? 1900 : 1400) + '"' +
+               responsiveAttrs(src, "100vw") +
+               ' alt="' + H.escapeHtml(H.propertyTitle(p)) + ' — ' + (i + 1) + '"' +
                ' class="' + (i === 0 ? "is-active" : "") + '"' +
                (i === 0 ? ' fetchpriority="high"' : ' loading="lazy"') + ' decoding="async">';
       }).join("");

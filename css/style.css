@@ -1024,18 +1024,22 @@ p:last-child { margin-bottom: 0; }
    17. SINGLE PROPERTY PAGE
    ========================================================================= */
 .gallery { position: relative; background: var(--navy-deep); }
+/* The photo is shown whole, never cropped, centred on the deep navy field.
+   Property photos arrive both upright and sideways, and cropping an upright
+   one into a wide banner throws most of the room away.                     */
 .gallery__stage {
   position: relative;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
+  background: var(--navy-deep);
 }
-@media (min-width: 760px) { .gallery__stage { aspect-ratio: 21 / 10; } }
+@media (min-width: 760px) { .gallery__stage { aspect-ratio: 16 / 9; } }
 
 .gallery__stage img {
   position: absolute;
   inset: 0;
   width: 100%; height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.65s var(--ease);
 }
