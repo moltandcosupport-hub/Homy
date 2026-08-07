@@ -136,7 +136,7 @@ look at it there, which is simpler.
 ## 6. Before you go live
 
 Already done: the WhatsApp number, the phone number, Rita Elliaoui's name, the
-2017 founding date and the Triangle d'Or office.
+October 2019 founding date and the Triangle d'Or office.
 
 Still to do:
 
@@ -144,8 +144,9 @@ Still to do:
       (`addressLine1`), then check the map on the contact page
 - [ ] A real email address in `js/config.js` — `contact@homy.ma` is a guess
 - [ ] Your own property photos and text in `listings.json`
-- [ ] A photo of Rita for the home page and the About page (`index.html` and
-      `a-propos.html`, search for `founder__media`)
+- [ ] A sharper photo of Rita. The current one (`img/rita-elliaoui.jpg`) was
+      cropped from a phone screenshot, so it is a little soft on high-quality
+      screens. The original file from the photo shoot would fix that.
 - [ ] **The three testimonials are invented.** Replace them with real client
       quotes in `js/i18n.js`, or ask for the section to be removed.
 - [ ] The figures on the Investment page are market estimates for illustration;

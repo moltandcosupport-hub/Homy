@@ -44,5 +44,5 @@ window.HOMY_CONFIG = {
   linkedin:  "https://linkedin.com/",
 
   /* --- Agency ------------------------------------------------------------- */
-  foundedYear: 2017
+  foundedYear: 2019
 };

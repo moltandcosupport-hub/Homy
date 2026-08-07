@@ -124,8 +124,8 @@ window.HOMY_TEXT = {
     en: "“A home is not sold with a listing. It is told, shown at the right moment, and passed on to the right person.”"
   },
   "founder.text": {
-    fr: "Rita Elliaoui a fondé HOMY en 2017 avec une conviction simple : le marché marocain haut de gamme méritait un accompagnement à la hauteur des biens qu'il propose. Depuis le bureau du Triangle d'Or, elle suit personnellement chaque dossier.",
-    en: "Rita Elliaoui founded HOMY in 2017 with a simple conviction: Morocco's premium market deserved a level of service equal to the homes it offers. From the Triangle d'Or office, she follows every file personally."
+    fr: "Rita Elliaoui a fondé HOMY en octobre 2019 avec une conviction simple : le marché marocain haut de gamme méritait un accompagnement à la hauteur des biens qu'il propose. Depuis le bureau du Triangle d'Or, elle suit personnellement chaque dossier.",
+    en: "Rita Elliaoui founded HOMY in October 2019 with a simple conviction: Morocco's premium market deserved a level of service equal to the homes it offers. From the Triangle d'Or office, she follows every file personally."
   },
   "founder.cta": { fr: "Découvrir notre histoire", en: "Read our story" },
 
@@ -213,7 +213,7 @@ window.HOMY_TEXT = {
 
   /* --------------------------------------------------------- PAGE: ABOUT */
   "about.hero.eyebrow": { fr: "À propos", en: "About" },
-  "about.hero.title":   { fr: "Depuis 2017, une maison à la fois", en: "Since 2017, one home at a time" },
+  "about.hero.title":   { fr: "Depuis 2019, une maison à la fois", en: "Since 2019, one home at a time" },
   "about.hero.text": {
     fr: "HOMY est née d'un constat simple : au Maroc, les plus belles propriétés étaient vendues comme les autres.",
     en: "HOMY was born from a simple observation: in Morocco, the finest properties were being sold like any other."
@@ -222,8 +222,8 @@ window.HOMY_TEXT = {
   "about.story.eyebrow": { fr: "L'histoire", en: "The story" },
   "about.story.title":   { fr: "Une agence construite lentement", en: "An agency built slowly" },
   "about.story.p1": {
-    fr: "HOMY est fondée en 2017 par Rita Elliaoui, avec un bureau dans le Triangle d'Or à Casablanca et une règle qui n'a pas changé depuis : ne présenter que des biens que nous recommanderions à notre propre famille.",
-    en: "HOMY was founded in 2017 by Rita Elliaoui, with an office in the Triangle d'Or in Casablanca and one rule that has not changed since: only present properties we would recommend to our own family."
+    fr: "HOMY est fondée en octobre 2019 par Rita Elliaoui, avec un bureau dans le Triangle d'Or à Casablanca et une règle qui n'a pas changé depuis : ne présenter que des biens que nous recommanderions à notre propre famille.",
+    en: "HOMY was founded in October 2019 by Rita Elliaoui, with an office in the Triangle d'Or in Casablanca and one rule that has not changed since: only present properties we would recommend to our own family."
   },
   "about.story.p2": {
     fr: "L'agence s'est ensuite étendue à Marrakech, pour accompagner une clientèle européenne de plus en plus présente sur les villas de la Palmeraie et les riads de la Médina — deux marchés qui ne se traitent pas comme celui de Casablanca.",
@@ -453,8 +453,8 @@ window.HOMY_TEXT = {
 
   /* ---------------------------------------------------------------- FOOTER */
   "footer.about": {
-    fr: "Agence immobilière haut de gamme à Casablanca et Marrakech. Vente, location et conseil en investissement depuis 2017.",
-    en: "Premium real estate agency in Casablanca and Marrakech. Sales, lettings and investment advice since 2017."
+    fr: "Agence immobilière haut de gamme à Casablanca et Marrakech. Vente, location et conseil en investissement depuis 2019.",
+    en: "Premium real estate agency in Casablanca and Marrakech. Sales, lettings and investment advice since 2019."
   },
   "footer.navigate":  { fr: "Navigation", en: "Navigate" },
   "footer.contact":   { fr: "Contact", en: "Contact" },
