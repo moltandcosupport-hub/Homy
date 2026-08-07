@@ -119,13 +119,16 @@ window.HOMY_TEXT = {
   "founder.eyebrow": { fr: "La fondatrice", en: "The founder" },
   "founder.name":    { fr: "Rita Elliaoui", en: "Rita Elliaoui" },
   "founder.role":    { fr: "Fondatrice, HOMY Premium Real Estate", en: "Founder, HOMY Premium Real Estate" },
+  /* NOTE — these are words we have written FOR Rita, not words she has said.
+     Have her read this line and either approve it or replace it with her
+     own before the site is shown to clients.                              */
   "founder.quote": {
-    fr: "« Une maison ne se vend pas avec une annonce. Elle se raconte, se fait visiter au bon moment, et se transmet à la bonne personne. »",
-    en: "“A home is not sold with a listing. It is told, shown at the right moment, and passed on to the right person.”"
+    fr: "« L'immobilier haut de gamme ne devrait jamais être une transaction. C'est une rencontre : entre une personne, un lieu, et le moment juste. »",
+    en: "“Premium property should never be a transaction. It is a meeting: between a person, a place, and the right moment.”"
   },
   "founder.text": {
-    fr: "Rita Elliaoui a fondé HOMY en octobre 2019 avec une conviction simple : le marché marocain haut de gamme méritait un accompagnement à la hauteur des biens qu'il propose. Depuis le bureau du Triangle d'Or, elle suit personnellement chaque dossier.",
-    en: "Rita Elliaoui founded HOMY in October 2019 with a simple conviction: Morocco's premium market deserved a level of service equal to the homes it offers. From the Triangle d'Or office, she follows every file personally."
+    fr: "Rita Elliaoui fonde HOMY à Casablanca en octobre 2019 pour changer la façon dont se vend l'immobilier haut de gamme au Maroc : une approche sur mesure, presque haute couture, où la relation compte autant que le bien. Chaque projet est traité comme un accompagnement personnel, jamais comme une simple transaction.",
+    en: "Rita Elliaoui founded HOMY in Casablanca in October 2019 to change the way premium property is sold in Morocco: a bespoke approach, close to haute couture, where the relationship matters as much as the property. Every project is handled as a personal journey, never as a simple transaction."
   },
   "founder.cta": { fr: "Découvrir notre histoire", en: "Read our story" },
 

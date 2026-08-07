@@ -21,7 +21,7 @@ window.HOMY_CONFIG = {
   phoneSecondary: "",
 
   /* --- Email -------------------------------------------------------------- */
-  email: "contact@homy.ma",
+  email: "homypremiumestate@gmail.com",
 
   /* --- Office address ----------------------------------------------------- */
   addressLine1: "12, rue Ain El Ati",
