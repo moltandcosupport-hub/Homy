@@ -288,7 +288,13 @@ window.HOMY_LISTINGS_BACKUP = [
       ]
     },
     "images": [
-      "img/placeholder.svg"
+      "img/bourgogne-ouest-01.jpg",
+      "img/bourgogne-ouest-02.jpg",
+      "img/bourgogne-ouest-03.jpg",
+      "img/bourgogne-ouest-04.jpg",
+      "img/bourgogne-ouest-05.jpg",
+      "img/bourgogne-ouest-06.jpg",
+      "img/bourgogne-ouest-07.jpg"
     ]
   },
   {
@@ -297,7 +303,7 @@ window.HOMY_LISTINGS_BACKUP = [
     "type": "apartment",
     "city": "casablanca",
     "featured": true,
-    "price": null,
+    "price": 3650000,
     "surface": 204,
     "rooms": 3,
     "bathrooms": 3,
