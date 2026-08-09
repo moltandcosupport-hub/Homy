@@ -11,61 +11,6 @@
 
 window.HOMY_LISTINGS_BACKUP = [
   {
-    "id": "penthouse-triangle-dor",
-    "status": "sale",
-    "type": "penthouse",
-    "city": "casablanca",
-    "featured": true,
-    "price": 8900000,
-    "surface": 240,
-    "terrace": 90,
-    "rooms": 3,
-    "bathrooms": 3,
-    "floor": 8,
-    "floorsTotal": 8,
-    "parking": 2,
-    "year": 2021,
-    "neighbourhood": {
-      "fr": "Triangle d'Or",
-      "en": "Triangle d'Or"
-    },
-    "title": {
-      "fr": "Penthouse d'exception avec terrasse panoramique",
-      "en": "Exceptional penthouse with panoramic terrace"
-    },
-    "description": {
-      "fr": "Au dernier étage d'une résidence confidentielle de huit appartements, ce penthouse déploie 240 m² de volumes traversants baignés de lumière. Le séjour de 65 m² s'ouvre de plain-pied sur une terrasse de 90 m² orientée plein sud, avec vue dégagée sur les jardins du Triangle d'Or. Les trois chambres disposent chacune de leur salle de bains et de leur dressing. Livré meublé sur demande, ascenseur privatif, deux places de parking en sous-sol.",
-      "en": "On the top floor of a discreet eight-apartment residence, this penthouse unfolds across 240 sqm of light-filled, dual-aspect volumes. The 65 sqm living room opens directly onto a 90 sqm south-facing terrace with clear views over the gardens of the Triangle d'Or. Each of the three bedrooms has its own bathroom and dressing room. Available furnished on request, private lift access, two basement parking spaces."
-    },
-    "neighbourhoodDescription": {
-      "fr": "Le Triangle d'Or est le quartier le plus recherché de Casablanca. Délimité par les boulevards d'Anfa, Moulay Youssef et Rachidi, il concentre les meilleures adresses de la ville : restaurants gastronomiques, boutiques de créateurs, écoles françaises et espagnoles, cliniques privées. Un secteur de faible densité, arboré, où le foncier ne se libère que rarement.",
-      "en": "The Triangle d'Or is Casablanca's most sought-after district. Framed by the Anfa, Moulay Youssef and Rachidi boulevards, it gathers the city's finest addresses: fine-dining restaurants, designer boutiques, French and Spanish schools, private clinics. A low-density, tree-lined area where property rarely comes to market."
-    },
-    "finishes": {
-      "fr": [
-        "Marbre de Carrare au sol",
-        "Menuiserie aluminium à rupture de pont thermique",
-        "Cuisine Bulthaup équipée",
-        "Domotique KNX",
-        "Climatisation gainable",
-        "Ascenseur privatif",
-        "Terrasse avec pergola bioclimatique"
-      ],
-      "en": [
-        "Carrara marble flooring",
-        "Thermally broken aluminium joinery",
-        "Fitted Bulthaup kitchen",
-        "KNX home automation",
-        "Ducted air conditioning",
-        "Private lift",
-        "Terrace with bioclimatic pergola"
-      ]
-    },
-    "images": [
-      "img/placeholder.svg"
-    ]
-  },
-  {
     "id": "villa-ain-diab",
     "status": "rent",
     "type": "villa",
@@ -134,224 +79,6 @@ window.HOMY_LISTINGS_BACKUP = [
       "img/villa-ain-diab-05.jpg",
       "img/villa-ain-diab-06.jpg",
       "img/villa-ain-diab-07.jpg"
-    ]
-  },
-  {
-    "id": "appartement-racine",
-    "status": "sale",
-    "type": "apartment",
-    "city": "casablanca",
-    "featured": true,
-    "price": 3200000,
-    "surface": 132,
-    "terrace": 18,
-    "rooms": 3,
-    "bathrooms": 2,
-    "floor": 4,
-    "floorsTotal": 7,
-    "parking": 1,
-    "year": 2018,
-    "neighbourhood": {
-      "fr": "Racine",
-      "en": "Racine"
-    },
-    "title": {
-      "fr": "Appartement lumineux au cœur de Racine",
-      "en": "Bright apartment in the heart of Racine"
-    },
-    "description": {
-      "fr": "Dans un immeuble de standing livré en 2018, appartement traversant de 132 m² au quatrième étage sur sept. Séjour double de 42 m² prolongé par un balcon filant de 18 m², cuisine américaine équipée, trois chambres dont une suite parentale. Immeuble avec concierge, ascenseur, et une place de parking en sous-sol. Idéal résidence principale ou investissement locatif haut de gamme.",
-      "en": "In a high-specification building delivered in 2018, a 132 sqm dual-aspect apartment on the fourth of seven floors. A 42 sqm double living room extends onto an 18 sqm run of balcony, open fitted kitchen, three bedrooms including a master suite. The building offers a concierge, lift and one basement parking space. Ideal as a main residence or a premium rental investment."
-    },
-    "neighbourhoodDescription": {
-      "fr": "Racine est le quartier de la vie casablancaise contemporaine : cafés, galeries, brasseries et boutiques indépendantes le long de la rue Jean Jaurès et du boulevard d'Anfa. Très demandé à la location par les cadres expatriés, il affiche l'un des meilleurs rapports rendement / sécurité de la ville.",
-      "en": "Racine is where contemporary Casablanca lives: cafés, galleries, brasseries and independent boutiques along rue Jean Jaurès and boulevard d'Anfa. Highly sought after by expatriate executives, it delivers one of the city's best yield-to-security ratios."
-    },
-    "finishes": {
-      "fr": [
-        "Parquet chêne massif",
-        "Cuisine équipée Siemens",
-        "Salles de bains en marbre",
-        "Climatisation réversible",
-        "Volets roulants électriques",
-        "Interphone vidéo",
-        "Concierge 24h/24"
-      ],
-      "en": [
-        "Solid oak parquet",
-        "Fitted Siemens kitchen",
-        "Marble bathrooms",
-        "Reversible air conditioning",
-        "Electric shutters",
-        "Video entry system",
-        "24-hour concierge"
-      ]
-    },
-    "images": [
-      "img/placeholder.svg"
-    ]
-  },
-  {
-    "id": "appartement-bourgogne",
-    "status": "sale",
-    "type": "apartment",
-    "city": "casablanca",
-    "featured": true,
-    "price": 1500000,
-    "surface": 78,
-    "terrace": 0,
-    "rooms": 2,
-    "bathrooms": 1,
-    "floor": 3,
-    "floorsTotal": 5,
-    "parking": 1,
-    "year": 2015,
-    "neighbourhood": {
-      "fr": "Bourgogne",
-      "en": "Bourgogne"
-    },
-    "title": {
-      "fr": "Deux chambres rénové à deux pas de la Corniche",
-      "en": "Renovated two-bedroom moments from the Corniche"
-    },
-    "description": {
-      "fr": "Appartement de 78 m² entièrement rénové en 2023, au troisième étage d'un petit immeuble bien tenu. Séjour lumineux exposé ouest, cuisine ouverte neuve, deux chambres avec placards sur mesure, salle de bains refaite. Une place de parking. Première acquisition idéale ou produit locatif très liquide, à cinq minutes à pied de la Corniche et des écoles.",
-      "en": "A 78 sqm apartment fully renovated in 2023, on the third floor of a well-maintained small building. Bright west-facing living room, new open kitchen, two bedrooms with bespoke wardrobes, rebuilt bathroom. One parking space. An ideal first purchase or highly liquid rental asset, five minutes' walk from the Corniche and local schools."
-    },
-    "neighbourhoodDescription": {
-      "fr": "Bourgogne conjugue proximité de l'océan et vie de quartier authentique. Marchés, boulangeries, cliniques et écoles y sont accessibles à pied. Le secteur bénéficie directement de la requalification de la Corniche et affiche une demande locative constante toute l'année.",
-      "en": "Bourgogne combines proximity to the ocean with genuine neighbourhood life. Markets, bakeries, clinics and schools are all walkable. The area benefits directly from the Corniche regeneration and shows steady year-round rental demand."
-    },
-    "finishes": {
-      "fr": [
-        "Rénovation intégrale 2023",
-        "Sol en grès cérame grand format",
-        "Cuisine ouverte équipée",
-        "Placards sur mesure",
-        "Fenêtres double vitrage",
-        "Chauffe-eau thermodynamique"
-      ],
-      "en": [
-        "Complete 2023 renovation",
-        "Large-format porcelain flooring",
-        "Fitted open kitchen",
-        "Bespoke wardrobes",
-        "Double-glazed windows",
-        "Heat-pump water heater"
-      ]
-    },
-    "images": [
-      "img/placeholder.svg"
-    ]
-  },
-  {
-    "id": "villa-palmeraie-marrakech",
-    "status": "sale",
-    "type": "villa",
-    "city": "marrakech",
-    "featured": true,
-    "price": 12500000,
-    "surface": 480,
-    "land": 3000,
-    "rooms": 5,
-    "bathrooms": 5,
-    "floor": 0,
-    "floorsTotal": 1,
-    "parking": 3,
-    "year": 2020,
-    "neighbourhood": {
-      "fr": "La Palmeraie",
-      "en": "La Palmeraie"
-    },
-    "title": {
-      "fr": "Villa de plain-pied sur 3 000 m² d'oliviers",
-      "en": "Single-storey villa set in 3,000 sqm of olive groves"
-    },
-    "description": {
-      "fr": "Au cœur de la Palmeraie, villa de plain-pied de 480 m² posée sur un terrain de 3 000 m² planté d'oliviers centenaires. Architecture contemporaine en terre et pierre, patios intérieurs, cinq suites ouvertes sur le jardin. Piscine chauffée de 18 mètres, salon d'été couvert, cuisine d'été et hammam. Vue Atlas dégagée depuis l'ensemble des pièces de vie.",
-      "en": "In the heart of the Palmeraie, a 480 sqm single-storey villa set within 3,000 sqm planted with century-old olive trees. Contemporary earth-and-stone architecture, internal courtyards, five suites opening onto the garden. Heated 18-metre pool, covered summer lounge, outdoor kitchen and hammam. Uninterrupted Atlas views from every living space."
-    },
-    "neighbourhoodDescription": {
-      "fr": "La Palmeraie de Marrakech est le secteur historique des grandes propriétés, à quinze minutes de la Médina et dix minutes de l'aéroport Ménara. Golfs, écoles internationales et hôtellerie de luxe y sont concentrés. Marché porté par la clientèle européenne et par la montée en puissance de la location saisonnière haut de gamme.",
-      "en": "Marrakech's Palmeraie is the historic district of large estates, fifteen minutes from the Medina and ten from Ménara airport. Golf courses, international schools and luxury hospitality are concentrated here. The market is driven by European buyers and the fast growth of premium seasonal rentals."
-    },
-    "finishes": {
-      "fr": [
-        "Tadelakt et béton ciré artisanaux",
-        "Menuiserie cèdre massif",
-        "Piscine chauffée 18 m",
-        "Puits et forage privé",
-        "Panneaux photovoltaïques",
-        "Jardin d'oliviers centenaires",
-        "Logement de personnel indépendant"
-      ],
-      "en": [
-        "Hand-applied tadelakt and polished concrete",
-        "Solid cedar joinery",
-        "18 m heated pool",
-        "Private well and borehole",
-        "Photovoltaic panels",
-        "Century-old olive grove",
-        "Independent staff quarters"
-      ]
-    },
-    "images": [
-      "img/placeholder.svg"
-    ]
-  },
-  {
-    "id": "riad-medina-marrakech",
-    "status": "rent",
-    "type": "riad",
-    "city": "marrakech",
-    "featured": false,
-    "price": 12000,
-    "surface": 320,
-    "terrace": 60,
-    "rooms": 5,
-    "bathrooms": 4,
-    "floor": 0,
-    "floorsTotal": 3,
-    "parking": 0,
-    "year": 1930,
-    "neighbourhood": {
-      "fr": "Médina",
-      "en": "Medina"
-    },
-    "title": {
-      "fr": "Riad restauré avec patio et terrasse Atlas",
-      "en": "Restored riad with courtyard and Atlas terrace"
-    },
-    "description": {
-      "fr": "Riad des années 1930 restauré dans les règles de l'art, à sept minutes à pied de la place Jemaa el-Fna. Patio central planté d'orangers avec bassin, salon marocain, salle à manger, cinq chambres réparties sur trois niveaux et terrasse de 60 m² avec vue sur l'Atlas. Location longue durée uniquement, meublé, entretien du patio inclus.",
-      "en": "A 1930s riad restored to exacting standards, a seven-minute walk from Jemaa el-Fna. Central courtyard planted with orange trees and a water basin, Moroccan salon, dining room, five bedrooms across three levels and a 60 sqm terrace with Atlas views. Long-term let only, furnished, courtyard maintenance included."
-    },
-    "neighbourhoodDescription": {
-      "fr": "La Médina de Marrakech, classée au patrimoine mondial de l'UNESCO, reste la destination la plus recherchée pour un pied-à-terre authentique. Les riads restaurés y sont rares et la demande locative, portée par les longs séjours européens en hiver, dépasse largement l'offre disponible.",
-      "en": "Marrakech's UNESCO-listed Medina remains the most sought-after location for an authentic pied-à-terre. Restored riads are scarce and rental demand, driven by long European winter stays, comfortably outstrips available supply."
-    },
-    "finishes": {
-      "fr": [
-        "Zellige de Fès posé à la main",
-        "Plafonds en cèdre peint",
-        "Tadelakt traditionnel",
-        "Patio avec bassin et orangers",
-        "Cheminées fonctionnelles",
-        "Terrasse aménagée vue Atlas",
-        "Meublé et décoré"
-      ],
-      "en": [
-        "Hand-laid Fez zellige",
-        "Painted cedar ceilings",
-        "Traditional tadelakt",
-        "Courtyard with basin and orange trees",
-        "Working fireplaces",
-        "Furnished Atlas-view terrace",
-        "Fully furnished and styled"
-      ]
-    },
-    "images": [
-      "img/placeholder.svg"
     ]
   },
   {
@@ -491,5 +218,327 @@ window.HOMY_LISTINGS_BACKUP = [
       "img/racine-06.jpg"
     ],
     "land": null
+  },
+  {
+    "id": "appartement-bourgogne-ouest",
+    "status": "rent",
+    "type": "apartment",
+    "city": "casablanca",
+    "featured": true,
+    "price": 20000,
+    "surface": 150,
+    "rooms": 3,
+    "bathrooms": 2,
+    "floor": 4,
+    "floorsTotal": null,
+    "parking": 1,
+    "terrace": null,
+    "land": null,
+    "year": null,
+    "neighbourhood": {
+      "fr": "Bourgogne Ouest",
+      "en": "Bourgogne Ouest"
+    },
+    "title": {
+      "fr": "Appartement meublé vue mer avec terrasse, Bourgogne Ouest",
+      "en": "Furnished sea-view apartment with terrace, Bourgogne Ouest"
+    },
+    "description": {
+      "fr": "Appartement meublé de 150 m² à louer au quatrième étage d'un immeuble récent de Bourgogne Ouest, jamais occupé depuis rénovation. Orientation est, sols en marbre dans l'ensemble des pièces. Le séjour, très lumineux, ouvre sur une grande terrasse avec vue sur l'océan. Salle à manger séparée, salon marocain et salon européen, cuisine entièrement équipée avec réfrigérateur, four, lave-linge et micro-ondes. Trois chambres et deux salles de bains. Cheminée, climatisation, chauffage, double vitrage, porte blindée et système de sécurité. Garage, ascenseur, concierge, débarras, parabole et internet haut débit. Animaux acceptés.",
+      "en": "A furnished 150 sqm apartment to rent on the fourth floor of a recent Bourgogne Ouest building, unoccupied since renovation. East facing, with marble floors throughout. The bright living room opens onto a large terrace with ocean views. Separate dining area, Moroccan and European lounges, kitchen fully fitted with fridge, oven, washing machine and microwave. Three bedrooms and two bathrooms. Fireplace, air conditioning, heating, double glazing, reinforced door and security system. Garage, lift, concierge, box room, satellite and high-speed internet. Pets allowed."
+    },
+    "neighbourhoodDescription": {
+      "fr": "Bourgogne Ouest descend vers la Corniche et l'océan, à quelques minutes d'Aïn Diab. Le quartier réunit immeubles récents, commerces de proximité, écoles et cliniques, avec une demande locative soutenue toute l'année et un accès rapide au centre comme au front de mer.",
+      "en": "Bourgogne Ouest runs down towards the Corniche and the ocean, minutes from Aïn Diab. It combines recent buildings, local shops, schools and clinics, with steady year-round rental demand and quick access to both the centre and the seafront."
+    },
+    "finishes": {
+      "fr": [
+        "Vue mer",
+        "Grande terrasse",
+        "Meublé",
+        "Sols en marbre",
+        "Orientation est",
+        "Salon marocain et salon européen",
+        "Cheminée",
+        "Cuisine équipée : réfrigérateur, four, lave-linge, micro-ondes",
+        "Climatisation et chauffage",
+        "Double vitrage",
+        "Porte blindée et système de sécurité",
+        "Garage, ascenseur, concierge",
+        "Débarras",
+        "Parabole et internet",
+        "Animaux acceptés"
+      ],
+      "en": [
+        "Sea view",
+        "Large terrace",
+        "Furnished",
+        "Marble floors",
+        "East facing",
+        "Moroccan and European lounges",
+        "Fireplace",
+        "Fitted kitchen: fridge, oven, washing machine, microwave",
+        "Air conditioning and heating",
+        "Double glazing",
+        "Reinforced door and security system",
+        "Garage, lift, concierge",
+        "Box room",
+        "Satellite and internet",
+        "Pets allowed"
+      ]
+    },
+    "images": [
+      "img/placeholder.svg"
+    ]
+  },
+  {
+    "id": "duplex-maarif",
+    "status": "sale",
+    "type": "apartment",
+    "city": "casablanca",
+    "featured": true,
+    "price": null,
+    "surface": 204,
+    "rooms": 3,
+    "bathrooms": 3,
+    "floor": 16,
+    "floorsTotal": null,
+    "parking": 1,
+    "terrace": null,
+    "land": null,
+    "year": null,
+    "neighbourhood": {
+      "fr": "Maârif",
+      "en": "Maârif"
+    },
+    "title": {
+      "fr": "Duplex rénové de 204 m² au 16e étage, boulevard Zerktouni",
+      "en": "Renovated 204 sqm duplex on the 16th floor, boulevard Zerktouni"
+    },
+    "description": {
+      "fr": "Duplex rénové de 204 m² au seizième étage, sur le boulevard Zerktouni, à deux pas du Twin Center. La hauteur d'étage lui offre une vue panoramique sans aucun vis-à-vis. Séjour lumineux avec de larges ouvertures, cuisine fonctionnelle, trois chambres et trois salles de bains. Climatisation, chauffage et double vitrage. Une place de parking incluse. À distance de marche de l'ensemble des commerces, restaurants, écoles et axes principaux.",
+      "en": "A renovated 204 sqm duplex on the sixteenth floor of boulevard Zerktouni, steps from the Twin Center. Its height gives it a panoramic view with nothing overlooking it. Bright living room with wide openings, functional kitchen, three bedrooms and three bathrooms. Air conditioning, heating and double glazing. One parking space included. Walking distance to shops, restaurants, schools and main roads."
+    },
+    "neighbourhoodDescription": {
+      "fr": "Le Maârif et le boulevard Zerktouni forment le cœur commerçant et tertiaire de Casablanca : Twin Center, sièges d'entreprises, enseignes internationales, restaurants et cinémas. Les étages élevés y offrent des vues panoramiques rares, et le secteur reste l'un des plus liquides de la ville à la revente.",
+      "en": "Maârif and boulevard Zerktouni form Casablanca's retail and business heart: the Twin Center, corporate headquarters, international brands, restaurants and cinemas. High floors offer rare panoramic views, and the area remains one of the city's most liquid on resale."
+    },
+    "finishes": {
+      "fr": [
+        "Vue panoramique sans vis-à-vis",
+        "Seizième étage",
+        "Rénové",
+        "Grandes ouvertures",
+        "Cuisine fonctionnelle",
+        "Climatisation",
+        "Chauffage",
+        "Double vitrage",
+        "Place de parking",
+        "À deux pas du Twin Center"
+      ],
+      "en": [
+        "Panoramic view with no overlooking",
+        "Sixteenth floor",
+        "Renovated",
+        "Wide openings",
+        "Functional kitchen",
+        "Air conditioning",
+        "Heating",
+        "Double glazing",
+        "Parking space",
+        "Steps from the Twin Center"
+      ]
+    },
+    "images": [
+      "img/placeholder.svg"
+    ]
+  },
+  {
+    "id": "villa-ain-diab-550",
+    "status": "sale",
+    "type": "villa",
+    "city": "casablanca",
+    "featured": true,
+    "price": 12000000,
+    "surface": 550,
+    "rooms": 4,
+    "bathrooms": 2,
+    "floor": null,
+    "floorsTotal": null,
+    "parking": null,
+    "terrace": null,
+    "land": null,
+    "year": null,
+    "neighbourhood": {
+      "fr": "Aïn Diab",
+      "en": "Aïn Diab"
+    },
+    "title": {
+      "fr": "Villa de 550 m² avec grande piscine, Aïn Diab",
+      "en": "550 sqm villa with large pool, Aïn Diab"
+    },
+    "description": {
+      "fr": "Villa de 550 m² à vendre à Aïn Diab, en bon état. Six espaces de réception se répartissent sur la surface habitable, dont un séjour doté d'une cheminée. Quatre chambres et deux salles de bains. Jardin planté et grande piscine. Climatisation générale, chauffage, cuisine équipée et système de sécurité. Quartier verdoyant et sécurisé, à quelques minutes de la Corniche.",
+      "en": "A 550 sqm villa for sale in Aïn Diab, in good condition. Six reception spaces are laid out across the living area, including a living room with a fireplace. Four bedrooms and two bathrooms. Planted garden and a large swimming pool. General air conditioning, heating, fitted kitchen and security system. A green, secure district minutes from the Corniche."
+    },
+    "neighbourhoodDescription": {
+      "fr": "Aïn Diab est la façade balnéaire de Casablanca : plages, clubs et restaurants en front de mer, avec en retrait un tissu résidentiel de villas sur de grandes parcelles. Écoles internationales, golf d'Anfa et Morocco Mall sont accessibles en moins de dix minutes, et le secteur bénéficie directement de la requalification de la Corniche.",
+      "en": "Aïn Diab is Casablanca's seafront: beaches, clubs and waterfront restaurants, backed by a residential fabric of villas on generous plots. International schools, the Anfa golf course and Morocco Mall are within ten minutes, and the area benefits directly from the Corniche regeneration."
+    },
+    "finishes": {
+      "fr": [
+        "Grande piscine",
+        "Jardin",
+        "Six espaces de réception",
+        "Séjour avec cheminée",
+        "Climatisation générale",
+        "Chauffage",
+        "Cuisine équipée",
+        "Système de sécurité",
+        "Quartier verdoyant et sécurisé"
+      ],
+      "en": [
+        "Large swimming pool",
+        "Garden",
+        "Six reception spaces",
+        "Living room with fireplace",
+        "General air conditioning",
+        "Heating",
+        "Fitted kitchen",
+        "Security system",
+        "Green, secure district"
+      ]
+    },
+    "images": [
+      "img/placeholder.svg"
+    ]
+  },
+  {
+    "id": "villa-ain-diab-300",
+    "status": "sale",
+    "type": "villa",
+    "city": "casablanca",
+    "featured": true,
+    "price": 8000000,
+    "surface": 300,
+    "rooms": 4,
+    "bathrooms": 3,
+    "floor": null,
+    "floorsTotal": null,
+    "parking": null,
+    "terrace": null,
+    "land": null,
+    "year": null,
+    "neighbourhood": {
+      "fr": "Aïn Diab",
+      "en": "Aïn Diab"
+    },
+    "title": {
+      "fr": "Villa de 300 m² avec piscine et jardin, Aïn Diab",
+      "en": "300 sqm villa with pool and garden, Aïn Diab"
+    },
+    "description": {
+      "fr": "Villa de 300 m² à vendre à Aïn Diab, en bon état, dans une résidence fermée. Deux salons, quatre chambres et trois salles de bains. Séjour avec cheminée utilisable. Jardin, terrasse, balcon et grande piscine. Cave, climatisation intégrée, chauffage, cuisine équipée et système de sécurité. Environnement verdoyant et calme.",
+      "en": "A 300 sqm villa for sale in Aïn Diab, in good condition, within a closed residence. Two lounges, four bedrooms and three bathrooms. Living room with a working fireplace. Garden, terrace, balcony and a large swimming pool. Cellar, integrated air conditioning, heating, fitted kitchen and security system. A green and quiet setting."
+    },
+    "neighbourhoodDescription": {
+      "fr": "Aïn Diab est la façade balnéaire de Casablanca : plages, clubs et restaurants en front de mer, avec en retrait un tissu résidentiel de villas sur de grandes parcelles. Écoles internationales, golf d'Anfa et Morocco Mall sont accessibles en moins de dix minutes, et le secteur bénéficie directement de la requalification de la Corniche.",
+      "en": "Aïn Diab is Casablanca's seafront: beaches, clubs and waterfront restaurants, backed by a residential fabric of villas on generous plots. International schools, the Anfa golf course and Morocco Mall are within ten minutes, and the area benefits directly from the Corniche regeneration."
+    },
+    "finishes": {
+      "fr": [
+        "Grande piscine",
+        "Jardin et terrasse",
+        "Balcon",
+        "Cheminée utilisable",
+        "Cave",
+        "Climatisation intégrée",
+        "Chauffage",
+        "Cuisine équipée",
+        "Système de sécurité",
+        "Résidence fermée"
+      ],
+      "en": [
+        "Large swimming pool",
+        "Garden and terrace",
+        "Balcony",
+        "Working fireplace",
+        "Cellar",
+        "Integrated air conditioning",
+        "Heating",
+        "Fitted kitchen",
+        "Security system",
+        "Closed residence"
+      ]
+    },
+    "images": [
+      "img/placeholder.svg"
+    ]
+  },
+  {
+    "id": "appartement-casablanca-finance-city",
+    "status": "sale",
+    "type": "apartment",
+    "city": "casablanca",
+    "featured": false,
+    "price": null,
+    "surface": 65,
+    "rooms": 1,
+    "bathrooms": 1,
+    "floor": 9,
+    "floorsTotal": null,
+    "parking": 1,
+    "terrace": null,
+    "land": null,
+    "year": null,
+    "neighbourhood": {
+      "fr": "Casablanca Finance City",
+      "en": "Casablanca Finance City"
+    },
+    "title": {
+      "fr": "Appartement meublé dans une résidence avec piscine, Casablanca Finance City",
+      "en": "Furnished apartment in a residence with pool, Casablanca Finance City"
+    },
+    "description": {
+      "fr": "Appartement de 65 m² à vendre au neuvième étage, à Casablanca Finance City, jamais occupé depuis rénovation et livré meublé neuf. Orientation ouest, sols en marbre. Deux espaces de vie, une chambre et une salle de bains, avec de nombreux rangements. La résidence offre piscine, jardin, terrasse, ascenseur, parking et conciergerie, avec sécurité sur site. Climatisation, chauffage central, double vitrage et cuisine équipée.",
+      "en": "A 65 sqm apartment for sale on the ninth floor in Casablanca Finance City, unoccupied since renovation and delivered with new furniture. West facing, with marble floors. Two living spaces, one bedroom and one bathroom, with generous storage. The residence offers a pool, garden, terrace, lift, parking and concierge service, with on-site security. Air conditioning, central heating, double glazing and a fitted kitchen."
+    },
+    "neighbourhoodDescription": {
+      "fr": "Casablanca Finance City est le quartier d'affaires le plus récent de la ville, conçu autour des sièges financiers internationaux et desservi par le tramway. Résidences sécurisées avec piscine et conciergerie, clientèle de cadres expatriés, et une demande locative portée par les entreprises implantées sur le site.",
+      "en": "Casablanca Finance City is the city's newest business district, built around international financial headquarters and served by the tramway. Secure residences with pools and concierge service, a clientele of expatriate executives, and rental demand driven by the companies based there."
+    },
+    "finishes": {
+      "fr": [
+        "Meublé neuf",
+        "Piscine de résidence",
+        "Jardin et terrasse",
+        "Sols en marbre",
+        "Orientation ouest",
+        "Nombreux rangements",
+        "Ascenseur et parking",
+        "Conciergerie et sécurité sur site",
+        "Climatisation",
+        "Chauffage central",
+        "Double vitrage",
+        "Cuisine équipée"
+      ],
+      "en": [
+        "Newly furnished",
+        "Residence swimming pool",
+        "Garden and terrace",
+        "Marble floors",
+        "West facing",
+        "Generous storage",
+        "Lift and parking",
+        "Concierge and on-site security",
+        "Air conditioning",
+        "Central heating",
+        "Double glazing",
+        "Fitted kitchen"
+      ]
+    },
+    "images": [
+      "img/placeholder.svg"
+    ]
   }
 ];

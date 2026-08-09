@@ -133,6 +133,22 @@
     if (keep) select.value = keep;
   }
 
+  /* Which cities and property types actually exist in listings.json. The
+     menus only offer those, so a visitor can never pick a filter that
+     returns nothing. Add a Marrakech property and Marrakech reappears by
+     itself — nothing here needs editing.                                 */
+  var FACETS = null;
+
+  function learnFacets(list) {
+    FACETS = { city: {}, type: {} };
+    list.forEach(function (p) { FACETS.city[p.city] = true; FACETS.type[p.type] = true; });
+  }
+
+  function availableOnly(kind, options) {
+    if (!FACETS) return options;   // before the list has loaded, offer everything
+    return options.filter(function (o) { return FACETS[kind][o.value]; });
+  }
+
   var STATUS_OPTIONS = [
     { value: "sale", key: "common.forSale" },
     { value: "rent", key: "common.forRent" }
@@ -162,8 +178,8 @@
   function populateForm(form) {
     if (!form) return;
     fillSelect(form.querySelector('[name="status"]'), STATUS_OPTIONS, "search.statusAny");
-    fillSelect(form.querySelector('[name="city"]'), CITY_OPTIONS, "search.cityAny");
-    fillSelect(form.querySelector('[name="type"]'), TYPE_OPTIONS, "search.typeAny");
+    fillSelect(form.querySelector('[name="city"]'), availableOnly("city", CITY_OPTIONS), "search.cityAny");
+    fillSelect(form.querySelector('[name="type"]'), availableOnly("type", TYPE_OPTIONS), "search.typeAny");
     fillRooms(form.querySelector('[name="rooms"]'));
     var status = form.querySelector('[name="status"]');
     fillBudget(form.querySelector('[name="budget"]'), status ? status.value : "");
@@ -184,6 +200,7 @@
 
   function initHome() {
     var featured = $("#featuredGrid");
+    var form = $("#heroSearch");
     showSkeletons(featured, 6);
 
     /* A property with its own photographs leads. The ones still waiting on
@@ -193,6 +210,9 @@
     }
 
     DATA.load().then(function (list) {
+      learnFacets(list);
+      if (form) populateForm(form);   // rebuild the menus now we know what exists
+
       var picks = list.filter(function (p) { return p.featured; });
       if (picks.length < 6) picks = picks.concat(list.filter(function (p) { return !p.featured; }));
       picks = picks
@@ -206,7 +226,6 @@
       });
     });
 
-    var form = $("#heroSearch");
     if (form) {
       populateForm(form);
       var status = form.querySelector('[name="status"]');
@@ -256,8 +275,9 @@
         return true;
       });
 
-      if (f.sort === "priceAsc")  result.sort(function (a, b) { return a.price - b.price; });
-      if (f.sort === "priceDesc") result.sort(function (a, b) { return b.price - a.price; });
+      /* Price on request has no number to sort by, so it always lands last. */
+      if (f.sort === "priceAsc")  result.sort(function (a, b) { return (a.price || Infinity) - (b.price || Infinity); });
+      if (f.sort === "priceDesc") result.sort(function (a, b) { return (b.price || 0) - (a.price || 0); });
       if (f.sort === "surface")   result.sort(function (a, b) { return b.surface - a.surface; });
 
       renderCards(grid, result);
@@ -320,6 +340,9 @@
 
     DATA.load().then(function (list) {
       all = list.slice();
+      learnFacets(all);
+      populateForm(form);       // rebuild the menus now we know what exists
+      applyUrlToForm();         // and re-apply the filters from the address
       apply();
     });
 
