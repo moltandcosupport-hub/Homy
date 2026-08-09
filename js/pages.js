@@ -53,10 +53,11 @@
     var cover = p.images && p.images[0] ? p.images[0] : "";
     var title = H.propertyTitle(p);
 
+    /* A figure we do not have is left out rather than shown as a blank. */
     var specs =
-      '<span>' + H.icons.surface + p.surface + ' ' + H.t("unit.sqm") + '</span>' +
-      '<span>' + H.icons.bed + p.rooms + '</span>' +
-      '<span>' + H.icons.bath + p.bathrooms + '</span>';
+      (p.surface   ? '<span>' + H.icons.surface + p.surface + ' ' + H.t("unit.sqm") + '</span>' : "") +
+      (p.rooms     ? '<span>' + H.icons.bed + p.rooms + '</span>' : "") +
+      (p.bathrooms ? '<span>' + H.icons.bath + p.bathrooms + '</span>' : "");
 
     return '' +
       '<a class="card" href="propriete.html?id=' + encodeURIComponent(p.id) + '"' +
@@ -483,11 +484,10 @@
       $("#propPrice").innerHTML = price.amount + ' <span>' + price.suffix + '</span>';
 
       /* Specs — only show the ones that make sense for this property */
-      var specs = [
-        { value: p.surface + " " + H.t("unit.sqm"), label: H.t("spec.surface") },
-        { value: p.rooms, label: H.t("spec.rooms") },
-        { value: p.bathrooms, label: H.t("spec.bathrooms") }
-      ];
+      var specs = [];
+      if (p.surface)   specs.push({ value: p.surface + " " + H.t("unit.sqm"), label: H.t("spec.surface") });
+      if (p.rooms)     specs.push({ value: p.rooms, label: H.t("spec.rooms") });
+      if (p.bathrooms) specs.push({ value: p.bathrooms, label: H.t("spec.bathrooms") });
       if (p.land)    specs.push({ value: p.land + " " + H.t("unit.sqm"), label: H.t("spec.land") });
       if (p.terrace) specs.push({ value: p.terrace + " " + H.t("unit.sqm"), label: H.t("spec.terrace") });
 

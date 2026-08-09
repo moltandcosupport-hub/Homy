@@ -426,27 +426,27 @@ window.HOMY_LISTINGS_BACKUP = [
     "status": "rent",
     "type": "apartment",
     "city": "casablanca",
-    "featured": false,
-    "price": 8500,
-    "surface": 92,
-    "terrace": 8,
-    "rooms": 2,
-    "bathrooms": 1,
-    "floor": 2,
-    "floorsTotal": 6,
+    "featured": true,
+    "price": 17000,
+    "surface": 250,
+    "terrace": null,
+    "rooms": 4,
+    "bathrooms": null,
+    "floor": 4,
+    "floorsTotal": null,
     "parking": 1,
-    "year": 2016,
+    "year": null,
     "neighbourhood": {
       "fr": "Racine",
       "en": "Racine"
     },
     "title": {
-      "fr": "Deux chambres meublé au cœur de Racine",
-      "en": "Furnished two-bedroom in central Racine"
+      "fr": "Appartement 4 chambres de 250 m², Racine",
+      "en": "Four-bedroom apartment of 250 sqm, Racine"
     },
     "description": {
-      "fr": "Appartement meublé de 92 m² au deuxième étage, dans une petite copropriété calme à deux pas de la rue Jean Jaurès. Séjour avec balcon, cuisine équipée, deux chambres dont une avec dressing, salle de bains rénovée. Immeuble avec ascenseur et gardien. Une place de parking. Charges de copropriété incluses dans le loyer.",
-      "en": "A furnished 92 sqm apartment on the second floor of a quiet small building, steps from rue Jean Jaurès. Living room with balcony, fitted kitchen, two bedrooms one with dressing room, renovated bathroom. Lift and caretaker in the building. One parking space. Service charges included in the rent."
+      "fr": "Appartement de 250 m² à louer au quatrième étage d'une résidence bien tenue du quartier Racine. Son orientation sud lui assure une lumière constante tout au long de la journée. Une vaste réception aux sols de marbre s'ouvre sur un salon en parquet surélevé doté d'une cheminée. Quatre chambres spacieuses, plusieurs salles d'eau, et une cuisine entièrement équipée avec four, lave-linge et micro-ondes. Ascenseur, concierge, climatisation, chauffage, double vitrage et porte blindée. Une place de parking. En bon état, disponible immédiatement.",
+      "en": "A 250 sqm apartment to rent on the fourth floor of a well-maintained residence in Racine. Its south-facing aspect brings steady light throughout the day. A large marble-floored reception opens onto a raised parquet lounge with a fireplace. Four generous bedrooms, several bathrooms, and a fully fitted kitchen with oven, washing machine and microwave. Lift, concierge, air conditioning, heating, double glazing and reinforced door. One parking space. In good condition and available immediately."
     },
     "neighbourhoodDescription": {
       "fr": "Racine est le quartier de la vie casablancaise contemporaine : cafés, galeries, brasseries et boutiques indépendantes, le tout praticable à pied. Très prisé des jeunes cadres et des expatriés, il conserve une tension locative permanente et une vacance quasi nulle.",
@@ -454,24 +454,42 @@ window.HOMY_LISTINGS_BACKUP = [
     },
     "finishes": {
       "fr": [
-        "Meublé et décoré",
-        "Parquet stratifié chêne clair",
-        "Cuisine équipée",
-        "Climatisation dans les chambres",
-        "Ascenseur et gardien",
-        "Charges incluses"
+        "Sols en marbre",
+        "Orientation sud",
+        "Cheminée",
+        "Cuisine équipée avec four",
+        "Lave-linge et micro-ondes",
+        "Climatisation",
+        "Chauffage",
+        "Double vitrage",
+        "Porte blindée",
+        "Ascenseur",
+        "Concierge",
+        "Place de parking"
       ],
       "en": [
-        "Furnished and styled",
-        "Light oak laminate flooring",
-        "Fitted kitchen",
-        "Air conditioning in bedrooms",
-        "Lift and caretaker",
-        "Charges included"
+        "Marble floors",
+        "South facing",
+        "Fireplace",
+        "Fitted kitchen with oven",
+        "Washing machine and microwave",
+        "Air conditioning",
+        "Heating",
+        "Double glazing",
+        "Reinforced door",
+        "Lift",
+        "Concierge",
+        "Parking space"
       ]
     },
     "images": [
-      "img/placeholder.svg"
-    ]
+      "img/racine-01.jpg",
+      "img/racine-02.jpg",
+      "img/racine-03.jpg",
+      "img/racine-04.jpg",
+      "img/racine-05.jpg",
+      "img/racine-06.jpg"
+    ],
+    "land": null
   }
 ];
