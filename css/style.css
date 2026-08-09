@@ -458,9 +458,13 @@ p:last-child { margin-bottom: 0; }
 .mobile-nav.is-open { opacity: 1; visibility: visible; transform: none; }
 @media (min-width: 1060px) { .mobile-nav { display: none; } }
 
+/* display:block matters — an <a> is inline by default, which ran all five
+   menu items together on a single line. */
 .mobile-nav__link {
+  display: block;
   font-family: var(--font-serif);
-  font-size: 2rem;
+  font-size: 1.9rem;
+  line-height: 1.2;
   color: var(--white);
   padding: 15px 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -798,6 +802,17 @@ p:last-child { margin-bottom: 0; }
 
 .founder__media { position: relative; }
 .founder__media img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+
+/* On a phone a full-width 3:4 portrait swallows almost the whole screen.
+   Cap the height and hold the crop on her face.                          */
+@media (max-width: 899px) {
+  .founder__media img {
+    max-height: 54vh;
+    object-position: center 20%;
+  }
+  /* Pull the gold frame back so it does not touch the screen edge. */
+  .founder__media::before { inset: 12px -10px -12px 12px; }
+}
 .founder__media::before {
   content: "";
   position: absolute;
