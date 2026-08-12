@@ -416,7 +416,12 @@ window.HOMY_LISTINGS_BACKUP = [
       ]
     },
     "images": [
-      "img/placeholder.svg"
+      "img/villa550-01.jpg",
+      "img/villa550-02.jpg",
+      "img/villa550-03.jpg",
+      "img/villa550-04.jpg",
+      "img/villa550-05.jpg",
+      "img/villa550-06.jpg"
     ]
   },
   {
@@ -487,7 +492,7 @@ window.HOMY_LISTINGS_BACKUP = [
     "type": "apartment",
     "city": "casablanca",
     "featured": false,
-    "price": null,
+    "price": 2200000,
     "surface": 65,
     "rooms": 1,
     "bathrooms": 1,
